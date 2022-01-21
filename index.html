@@ -14,7 +14,7 @@
 			font-size: 18px;
 			font-family: 'Roboto', sans-serif;
 			opacity: 0.8;
-		}	
+		}
 
 		h1 {
 			color: forestgreen;
@@ -28,18 +28,21 @@
 		}
 
 		h3 {
+			text-align: left;
 			font-family: 'Courier Prime', monospace;
-		}	
+		}
 
 		a {
 			color: inherit;
 			opacity: .7;
 			text-shadow: 1px 1px black;
+			text-align: left;
 		}
 
 		a:hover {
 			color: #FFFFFF;
 			opacity: 1;
+			text-align: left;
 		}
 
 		main {
@@ -66,7 +69,7 @@
 
 		.a-indice {
 			text-decoration: none;
-			color: yellow;			
+			color: yellow;
 			font-family: 'Courier Prime', monospace;
 		}
 
@@ -79,6 +82,7 @@
 		.d-indice a:hover {
 			font-family: 'Courier Prime', monospace;
 			font-size: 20px;
+			text-align: left;
 		}
 
 		.d-indice {
@@ -112,7 +116,7 @@
 		}
 
 		.exemplo pre {
-		    margin-left: -333px;
+		    margin-left: -310px;
 		}
 
 		code.exemplo {
@@ -133,9 +137,10 @@
 <body>
 	<main>
 		<div style="display: none;">
-		</div>	
+		</div>
 		<h1 id="00" >Documentação <span class="py-color">Python</span> 3.10.2</h1>
-			<a class="a-pre" href="https://docs.python.org/pt-br/3/">https://docs.python.org/pt-br/3/
+			<a class="a-pre" href="https://docs.python.org/pt-br/3/" target="_blank">https://docs.python.org/pt-br/3/
+
 			</a>
 		<div class="d-indice">
 			<a href="#0">Introdução</a><br><br>
@@ -146,33 +151,35 @@
 			<a href="#2.1.2">2.1.2. Modo interativo</a><br>
 			<a href="#2.2">2.2. O interpretador e seu ambiente</a><br>
 			<a href="#2.2.1">2.2.1. Edição de código-fonte</a><br>
-			<a class="desabilitado" href="#">3. Uma introdução informal ao Python</a><br>
-			<a class="desabilitado" href="#">3.1. Usando <span class="py-color">Python</span> como uma calculadora</a><br>
-			<a class="desabilitado" href="#">3.1.1. Números</a><br>
-			<a class="desabilitado" href="#">3.1.2. Strings</a><br>
-			<a class="desabilitado" href="#">3.1.3. Listas</a><br>
-			<a class="desabilitado" href="#">3.2. Primeiros passos para a programação</a><br>
-			<a class="desabilitado" href="#">4. Mais ferramentas de controle de fluxo</a><br>
-			<a class="desabilitado" href="#">4.1. Comandos if</a><br>
-			<a class="desabilitado" href="#">4.2. Comandos for</a><br>
-			<a class="desabilitado" href="#">4.3. A função range()</a><br>
-			<a class="desabilitado" href="#">4.4. Comandos break e continue, e cláusula else, nos laços de repetição</a><br>
-			<a class="desabilitado" href="#">4.5. Comandos pass</a><br>
-			<a class="desabilitado" href="#">4.6. Instruções match</a><br>
-			<a class="desabilitado" href="#">4.7. Definindo funções</a><br>
-			<a class="desabilitado" href="#">4.8. Mais sobre definição de funções</a><br>
-			<a class="desabilitado" href="#">4.8.1. Argumentos com valor padrão</a><br>
-			<a class="desabilitado" href="#">4.8.2. Argumentos nomeados</a><br>
-			<a class="desabilitado" href="#">4.8.3. Parâmetros especiais</a><br>
-			<a class="desabilitado" href="#">4.8.3.1. Argumentos posicional-ou-nomeados</a><br>
-			<a class="desabilitado" href="#">4.8.3.2. Parâmetros somente-posicionais</a><br>
-			<a class="desabilitado" href="#">4.8.3.3. Argumentos somente-nomeados</a><br>
-			<a class="desabilitado" href="#">4.8.3.4. Exemplos de funções</a><br>
-			<a class="desabilitado" href="#">4.8.3.5. Recapitulando</a><br>
-			<a class="desabilitado" href="#">4.8.4. Listas de argumentos arbitrárias</a><br>
-			<a class="desabilitado" href="#">4.8.5. Desempacotando listas de argumentos</a><br>
-			<a class="desabilitado" href="#">4.8.6. Expressões lambda</a><br>
-			<a class="desabilitado" href="#">4.8.7. Strings de documentação</a><br>
+			<a href="#3">3. Uma introdução informal ao Python</a><br>
+			<a href="#3.1">3.1. Usando <span class="py-color">Python</span> como uma calculadora</a><br>
+			<a href="#3.1.1">3.1.1. Números</a><br>
+			<a href="#3.1.2">3.1.2. Strings</a><br>
+			<a href="#3.1.3">3.1.3. Listas</a><br>
+			<a href="#3.2">3.2. Primeiros passos para a programação</a><br>
+			<a href="#4">4. Mais ferramentas de controle de fluxo</a><br>
+			<a href="#4.1">4.1. Comandos if</a><br>
+			<a href="#4.2">4.2. Comandos for</a><br>
+			<a href="#4.3">4.3. A função range()</a><br>
+			<a href="#4.4">4.4. Comandos break e continue, e cláusula else, nos laços de repetição</a><br>
+			<a href="#4.5">4.5. Comandos pass</a><br>
+			<a href="#4.6">4.6. Instruções match</a><br>
+			<a href="#4.7">4.7. Definindo funções</a><br>
+			<a href="#4.8">4.8. Mais sobre definição de funções</a><br>
+			<a href="#4.8.1">4.8.1. Argumentos com valor padrão</a><br>
+			<a href="#4.8.2">4.8.2. Argumentos nomeados</a><br>
+			<a href="#4.8.3">4.8.3. Parâmetros especiais</a><br>
+			<a href="#4.8.3.1">4.8.3.1. Argumentos posicional-ou-nomeados</a><br>
+			<a href="#4.8.3.2">4.8.3.2. Parâmetros somente-posicionais</a><br>
+			<a href="#4.8.3.3">4.8.3.3. Argumentos somente-nomeados</a><br>
+			<a href="#4.8.3.4">4.8.3.4. Exemplos de funções</a><br>
+			<a href="#4.8.3.5">4.8.3.5. Recapitulando</a><br>
+			<a href="#4.8.4">4.8.4. Listas de argumentos arbitrárias</a><br>
+			<a href="#4.8.5">4.8.5. Desempacotando listas de argumentos</a><br>
+			<a href="#4.8.6">4.8.6. Expressões lambda</a><br>
+			<a href="#4.8.7">4.8.7. Strings de documentação</a><br>
+			<a href="#4.8.8">4.8.8. Anotações de função</a><br>
+			<a href="#4.9">4.9. Intermezzo: estilo de codificação</a><br>
 		</div>
 
 		<h2 id="0">O tutorial de Python<a class="a-indice" href="#00"><sub>&nbsp;índice</sub></a></h2>
@@ -321,7 +328,7 @@
 		Considerando que comandos Python frequentemente têm espaços em branco (ou outros caracteres que são especiais para a shell) é aconselhável que o comando esteja dentro de aspas duplas.<br><br>
 
 		Alguns módulos Python são também úteis como scripts.<br><br>
-		Estes podem ser chamados usando python -m módulo [arg] que executa o arquivo fonte do módulo como se 
+		Estes podem ser chamados usando python -m módulo [arg] que executa o arquivo fonte do módulo como se
 
 		você tivesse digitado seu caminho completo na linha de comando.<br><br>
 
@@ -343,7 +350,7 @@
 
 		<h3 id="2.1.2">2.1.2. Modo interativo<a class="a-indice" href="#00"><sub>&nbsp;índice</sub></a></h3>
 
-		Quando os comandos são lidos a partir do console, diz-se que o interpretador está em modo interativo.<br><br> 
+		Quando os comandos são lidos a partir do console, diz-se que o interpretador está em modo interativo.<br><br>
 
 		Nesse modo ele solicita um próximo comando através do prompt primário, tipicamente três sinais de maior (>>>); para linhas de continuação do comando atual, o prompt secundário padrão é formado por três pontos (...). O interpretador exibe uma mensagem de boas vindas, informando seu número de versão e um aviso de copyright antes de exibir o primeiro prompt:<br><br>
 
@@ -401,7 +408,7 @@
 		<div class="exemplo">
 			<pre>
 				<code>
-				# -*- coding: cp1252 -*-	
+				# -*- coding: cp1252 -*-
 				</code>
 			</pre>
 		</div>
@@ -414,7 +421,7 @@
 			<pre>
 				<code>
 				#!/usr/bin/env python3
-				# -*- coding: cp1252 -*-	
+				# -*- coding: cp1252 -*-
 				</code>
 			</pre>
 		</div>
@@ -423,6 +430,1756 @@
 			Notas de rodapé<br>
 			1 No Unix, o interpretador Python 3.x não é instalado por padrão com o executável nomeado python, então não vai conflitar com um executável Python 2.x instalado simultaneamente.
 		</blockquote>
+
+		<h2 id="3">3. Uma introdução informal ao Python<a class="a-indice" href="#00"><sub>&nbsp;índice</sub></a></h2>
+		Nos exemplos seguintes, pode-se distinguir entrada e saída pela presença ou ausência dos prompts (>>> e …): para repetir o exemplo, você deve digitar tudo após o prompt, quando o mesmo aparece; linhas que não começarem com um prompt são na verdade as saídas geradas pelo interpretador.<br><br>
+
+		Observe que quando aparece uma linha contendo apenas o prompt secundário você deve digitar uma linha em branco; é assim que se encerra um comando de múltiplas linhas.<br><br>
+
+		Você pode alternar a exibição de prompts e saída clicando em >>> no canto superior direito de uma caixa de exemplo. Se você ocultar os prompts e a saída para um exemplo, poderá copiar e colar facilmente as linhas de entrada em seu interpretador.<br><br>
+
+		Muitos exemplos neste manual, mesmo aqueles inscritos na linha de comando interativa, incluem comentários. Comentários em Python começam com o caractere cerquilha ‘#’ e estende até o final da linha.<br><br>
+
+		Um comentário pode aparecer no inicio da linha ou após espaço em branco ou código, mas não dentro de uma string literal. O caracterer cerquilha dentro de uma string literal é apenas uma cerquilha.<br><br>
+
+		Como os comentários são para esclarecer o código e não são interpretados pelo Python, eles podem ser omitidos ao digitar exemplos.<br><br>
+
+		<strong>Alguns exemplos:</strong><br><br>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				# this is the first comment
+				spam = 1  # and this is the second comment
+				          # ... and now a third!
+				text = "# This is not a comment because it's inside quotes."
+				</code>
+			</pre>
+		</div>
+
+		<h3 id="3.1">3.1. Usando Python como uma calculadora<a class="a-indice" href="#00"><sub>&nbsp;índice</sub></a></h3>		
+		Vamos experimentar alguns comandos simples em Python. Inicie o interpretador e aguarde o prompt primário, >>>. (Não deve demorar muito).<br><br>
+
+		<h3 id="3.1.1">3.1.1. Números<a class="a-indice" href="#00"><sub>&nbsp;índice</sub></a></h3>
+		O interpretador funciona como uma calculadora bem simples: você pode digitar uma expressão e o resultado será apresentado. A sintaxe de expressões é a usual: operadores +, -, * e / funcionam da mesma forma que em outras linguagens tradicionais (por exemplo, Pascal ou C); parênteses (()) podem ser usados para agrupar expressões. Por exemplo:<br><br>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				>>> 2 + 2
+				4
+				>>> 50 - 5*6
+				20
+				>>> (50 - 5*6) / 4
+				5.0
+				>>> 8 / 5  # division always returns a floating point number
+				1.6
+				</code>
+			</pre>
+		</div>
+
+		Os números inteiros (ex. 2, 4, 20) são do tipo int, aqueles com parte fracionária (ex. 5.0, 1.6) são do tipo float. Veremos mais sobre tipos numéricos posteriormente neste tutorial.<br><br>
+
+		Divisão (/) sempre retorna ponto flutuante (float). Para fazer uma divisão pelo piso e receber um inteiro como resultado (descartando a parte fracionária) você pode usar o operador //; para calcular o resto você pode usar o %:<br><br>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				>>> 17 / 3  # classic division returns a float
+				5.666666666666667
+				>>>
+				>>> 17 // 3  # floor division discards the fractional part
+				5
+				>>> 17 % 3  # the % operator returns the remainder of the division
+				2
+				>>> 5 * 3 + 2  # floored quotient * divisor + remainder
+				</code>
+			</pre>
+		</div>
+
+		Com Python, é possível usar o operador ** para calcular potências 1:<br><br>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				>>> 5 ** 2  # 5 squared
+				25
+				>>> 2 ** 7  # 2 to the power of 7
+				128
+				</code>
+			</pre>
+		</div>
+
+		O sinal de igual ('=') é usado para atribuir um valor a uma variável. Depois de uma atribuição, nenhum resultado é exibido antes do próximo prompt:<br><br>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				>>> width = 20
+				>>> height = 5 * 9
+				>>> width * height
+				900	
+				</code>
+			</pre>
+		</div>
+
+		Se uma variável não é “definida” (não tem um valor atribuído), tentar utilizá-la gerará um erro:<br><br>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				>>> n  # try to access an undefined variable
+				Traceback (most recent call last):
+				File "<stdin>", line 1, in <module>
+				NameError: name 'n' is not defined
+				</code>
+			</pre>
+		</div>
+
+		Há suporte completo para ponto flutuante (float); operadores com operandos de diferentes tipos convertem o inteiro para ponto flutuante:<br><br>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				>>> 4 * 3.75 - 1
+				14.0				
+				</code>
+			</pre>
+		</div>
+
+		No modo interativo, o valor da última expressão exibida é atribuída a variável _. Assim, ao utilizar Python como uma calculadora, fica mais fácil prosseguir com os cálculos, por exemplo:<br><br>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				>>> tax = 12.5 / 100
+				>>> price = 100.50
+				>>> price * tax
+				12.5625
+				>>> price + _
+				113.0625
+				>>> round(_, 2)
+				113.06					
+				</code>
+			</pre>
+		</div>
+
+		Essa variável especial deve ser tratada como somente para leitura pelo usuário. Nunca lhe atribua explicitamente um valor — do contrário, estaria criando uma outra variável (homônima) independente, que mascararia a variável especial com seu comportamento mágico.<br><br>
+
+		Além de int e float, o Python suporta outros tipos de números, tais como Decimal e Fraction. O Python também possui suporte nativo a números complexos, e usa os sufixos j ou J para indicar a parte imaginária (por exemplo, 3+5j).<br><br>
+
+		Além de números, Python também pode manipular strings (sequências de caracteres), que podem ser expressas de diversas formas. Elas podem ser delimitadas por aspas simples ('...') ou duplas ("...") e teremos o mesmo resultado 2. \ pode ser usada para escapar aspas:<br><br>
+
+		<h3 id="3.1.2">3.1.2. Strings<a class="a-indice" href="#00"><sub>&nbsp;índice</sub></a></h3>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				>>> 'spam eggs'  # single quotes
+				'spam eggs'
+				>>> 'doesn\'t'  # use \' to escape the single quote...
+				"doesn't"
+				>>> "doesn't"  # ...or use double quotes instead
+				"doesn't"
+				>>> '"Yes," they said.'
+				'"Yes," they said.'
+				>>> "\"Yes,\" they said."
+				'"Yes," they said.'
+				>>> '"Isn\'t," they said.'
+				'"Isn\'t," they said.'	
+				</code>
+			</pre>
+		</div>
+
+		Na interpretação interativa, a string de saída é delimitada com aspas e caracteres especiais são escapados com barras invertidas. Embora isso possa às vezes parecer diferente da entrada (as aspas podem mudar), as duas strings são equivalentes. A string é delimitada com aspas duplas se a string contiver uma única aspa simples e nenhuma aspa dupla, caso contrário, ela é delimitada com aspas simples. A função print() produz uma saída mais legível, ao omitir as aspas e ao imprimir caracteres escapados e especiais:<br><br>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				>>> '"Isn\'t," they said.'
+				'"Isn\'t," they said.'
+				>>> print('"Isn\'t," they said.')
+				"Isn't," they said.
+				>>> s = 'First line.\nSecond line.'  # \n means newline
+				>>> s  # without print(), \n is included in the output
+				'First line.\nSecond line.'
+				>>> print(s)  # with print(), \n produces a new line
+				First line.
+				Second line.	
+				</code>
+			</pre>
+		</div>
+
+		Se não quiseres que os caracteres sejam precedidos por \ para serem interpretados como caracteres especiais, poderás usar strings raw (N.d.T: “crua” ou sem processamento de caracteres de escape) adicionando um r antes da primeira aspa:<br><br>
+
+	    <div class="exemplo">
+			<pre>
+				<code>
+				>>>
+				>>> print('C:\some\name')  # here \n means newline!
+				C:\some
+				ame
+				>>> print(r'C:\some\name')  # note the r before the quote
+				C:\some\name
+				</code>
+			</pre>
+	    </div>
+
+		As strings literais podem abranger várias linhas. Uma maneira é usar as aspas triplas: """...""" ou '''...'''. O fim das linhas é incluído automaticamente na string, mas é possível evitar isso adicionando uma \ no final. O seguinte exemplo:<br><br>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				print("""\
+				Usage: thingy [OPTIONS]
+				 -h                        Display this usage message
+				 -H hostname               Hostname to connect to
+				""")
+				produz a seguinte saída (observe que a linha inicial não está incluída):
+
+				Usage: thingy [OPTIONS]
+				 -h                        Display this usage message
+				 -H hostname               Hostname to connect to
+			 </code>
+			</pre>
+		</div>
+
+		Strings podem ser concatenadas (coladas) com o operador +, e repetidas com *:<br><br>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				>>>
+				>>> # 3 times 'un', followed by 'ium'
+				>>> 3 * 'un' + 'ium'
+				'unununium'
+
+				Duas ou mais strings literais (ou seja, entre aspas) ao lado da outra são automaticamente concatenados.<br><br>
+
+				>>>
+				>>> 'Py' 'thon'
+				'Python'	
+				</code>
+			</pre>
+		</div>
+
+		Esse recurso é particularmente útil quando você quer quebrar strings longas:<br><br>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				>>>
+				>>> text = ('Put several strings within parentheses '
+				...         'to have them joined together.')
+				>>> text
+				'Put several strings within parentheses to have them joined together.'	
+				</code>
+			</pre>
+		</div>
+
+		Isso só funciona com duas strings literais, não com variáveis ou expressões:<br><br>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				>>>
+				>>> prefix = 'Py'
+				>>> prefix 'thon'  # can't concatenate a variable and a string literal
+				  File "<stdin>", line 1
+				    prefix 'thon'
+				                ^
+				SyntaxError: invalid syntax
+				>>> ('un' * 3) 'ium'
+				  File "<stdin>", line 1
+				    ('un' * 3) 'ium'
+				                   ^
+				SyntaxError: invalid 	
+				</code>
+			</pre>
+		</div>
+
+		Se você quiser concatenar variáveis ou uma variável e uma literal, use +:<br><br>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				>>>
+				>>> prefix + 'thon'
+				'Python'	
+				</code>
+			</pre>
+		</div>
+
+		As strings podem ser indexadas (subscritas), com o primeiro caractere como índice 0. Não existe um tipo específico para caracteres; um caractere é simplesmente uma string cujo tamanho é 1:<br><br>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				>>>
+				>>> word = 'Python'
+				>>> word[0]  # character in position 0
+				'P'
+				>>> word[5]  # character in position 5
+				'n'	
+				</code>
+			</pre>
+		</div>
+
+		Índices também podem ser números negativos para iniciar a contagem pela direita:<br><br>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				>>>
+				>>> word[-1]  # last character
+				'n'
+				>>> word[-2]  # second-last character
+				'o'
+				>>> word[-6]
+				'P'	
+				</code>
+			</pre>
+		</div>
+
+		Note que dado que -0 é o mesmo que 0, índices negativos começam em -1.<br><br>
+
+		Além da indexação, o fatiamento também é permitido. Embora a indexação seja usada para obter caracteres individuais, fatiar permite que você obtenha substring:<br><br>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				>>>
+				>>> word[0:2]  # characters from position 0 (included) to 2 (excluded)
+				'Py'
+				>>> word[2:5]  # characters from position 2 (included) to 5 (excluded)
+				'tho'	
+				</code>
+			</pre>
+		</div>
+
+		Os índices do fatiamento possuem padrões úteis; um primeiro índice omitido padrão é zero, um segundo índice omitido é por padrão o tamanho da string sendo fatiada:<br><br>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				>>>
+				>>> word[:2]   # character from the beginning to position 2 (excluded)
+				'Py'
+				>>> word[4:]   # characters from position 4 (included) to the end
+				'on'
+				>>> word[-2:]  # characters from the second-last (included) to the end
+				'on'	
+				</code>
+			</pre>
+		</div>
+
+		Observe como o início sempre está incluído, e o fim sempre é excluído. Isso garante que s[:i] + s[i:] seja sempre igual a s:<br><br>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				>>>
+				>>> word[:2] + word[2:]
+				'Python'
+				>>> word[:4] + word[4:]
+				'Python'	
+				</code>
+			</pre>
+		</div>
+
+		Uma maneira de lembrar como fatias funcionam é pensar que os índices indicam posições entre caracteres, onde a borda esquerda do primeiro caractere é 0. Assim, a borda direita do último caractere de uma string de comprimento n tem índice n, por exemplo:<br><br>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				 +---+---+---+---+---+---+
+				 | P | y | t | h | o | n |
+				 +---+---+---+---+---+---+
+				 0   1   2   3   4   5   6
+				-6  -5  -4  -3  -2  -1	
+				</code>
+			</pre>
+		</div>
+
+		A primeira fileira de números indica a posição dos índices 0…6 na string; a segunda fileira indica a posição dos respectivos índices negativos. Uma fatia de i a j consiste em todos os caracteres entre as bordas i e j, respectivamente.<br><br>
+
+		Para índices positivos, o comprimento da fatia é a diferença entre os índices, se ambos estão dentro dos limites da string. Por exemplo, o comprimento de word[1:3] é 2.<br><br>
+
+		A tentativa de usar um índice que seja muito grande resultará em um erro:<br><br>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				>>>
+				>>> word[42]  # the word only has 6 characters
+				Traceback (most recent call last):
+				  File "<stdin>", line 1, in <module>
+				IndexError: string index out of range	
+				</code>
+			</pre>
+		</div>
+
+		No entanto, os índices de fatiamento fora do alcance são tratados graciosamente (N.d.T: o termo original “gracefully” indica robustez no tratamento de erros) quando usados para fatiamento. Um índice maior que o comprimento é trocado pelo comprimento, um limite superior menor que o limite inferior produz uma string vazia:<br><br>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				>>>
+				>>> word[4:42]
+				'on'
+				>>> word[42:]
+				''	
+				</code>
+			</pre>
+		</div>
+		As strings do Python não podem ser alteradas — uma string é imutável. Portanto, atribuir a uma posição indexada na sequência resulta em um erro:<br><br>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				>>>
+				>>> word[0] = 'J'
+				Traceback (most recent call last):
+				  File "<stdin>", line 1, in <module>
+				TypeError: 'str' object does not support item assignment
+				>>> word[2:] = 'py'
+				Traceback (most recent call last):
+				  File "<stdin>", line 1, in <module>
+				TypeError: 'str' object does not support item assignment	
+				</code>
+			</pre>
+		</div>
+
+		Se você precisar de uma string diferente, deverá criar uma nova:<br><br>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				>>>
+				>>> 'J' + word[1:]
+				'Jython'
+				>>> word[:2] + 'py'
+				'Pypy'	
+				</code>
+			</pre>
+		</div>
+
+		A função embutida len() devolve o comprimento de uma string:<br><br>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				>>>
+				>>> s = 'supercalifragilisticexpialidocious'
+				>>> len(s)
+				34	
+				</code>
+			</pre>
+		</div>
+
+		Ver também<br>
+		Tipo sequência de texto — str
+		As strings são exemplos de tipos de sequências e suportam as operações comumente suportadas por esses tipos.<br><br>
+
+		Métodos de string<br>
+		As strings suportam uma grande quantidade de métodos para transformações básicas e busca.<br><br>
+
+		Literais de string formatados<br>
+		Strings literais que possuem expressões embutidas.<br><br>
+
+		Sintaxe das strings de formato<br>
+		Informações sobre formatação de string com o método str.format().<br><br>
+
+		Formatação de String no Formato printf-style<br>
+		As antigas operações de formatação invocadas quando as strings são o operando esquerdo do operador % são descritas com mais detalhes aqui.<br><br>
+
+		<h3 id="3.1.3">3.1.3. Listas<a class="a-indice" href="#00"><sub>&nbsp;índice</sub></a></h3>
+		Python inclui diversas estruturas de dados compostas, usadas para agrupar outros valores. A mais versátil é list (lista), que pode ser escrita como uma lista de valores (itens) separados por vírgula, entre colchetes. Os valores contidos na lista não precisam ser todos do mesmo tipo.<br><br>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				>>>
+				>>> squares = [1, 4, 9, 16, 25]
+				>>> squares
+				[1, 4, 9, 16, 25]	
+				</code>
+			</pre>
+		</div>
+
+		Como strings (e todos os tipos embutidos de sequência), listas pode ser indexados e fatiados:<br><br>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				>>>
+				>>> squares[0]  # indexing returns the item
+				1
+				>>> squares[-1]
+				25
+				>>> squares[-3:]  # slicing returns a new list
+				[9, 16, 25]	
+				</code>
+			</pre>
+		</div>
+
+		Todas as operações de fatiamento devolvem uma nova lista contendo os elementos solicitados. Isso significa que o seguinte fatiamento devolve uma cópia rasa da lista:<br><br>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				>>>
+				>>> squares[:]
+				[1, 4, 9, 16, 25]	
+				</code>
+			</pre>
+		</div>
+
+		As listas também suportam operações como concatenação:<br><br>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				>>>
+				>>> squares + [36, 49, 64, 81, 100]
+				[1, 4, 9, 16, 25, 36, 49, 64, 81, 100]	
+				</code>
+			</pre>
+		</div>
+
+		Diferentemente de strings, que são imutáveis, listas são mutáveis, ou seja, é possível alterar elementos individuais de uma lista:<br><br>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				>>>
+				>>> cubes = [1, 8, 27, 65, 125]  # something's wrong here
+				>>> 4 ** 3  # the cube of 4 is 64, not 65!
+				64
+				>>> cubes[3] = 64  # replace the wrong value
+				>>> cubes
+				[1, 8, 27, 64, 125]	
+				</code>
+			</pre>
+		</div>
+
+		Você também pode adicionar novos itens no final da lista, usando o método append() (estudaremos mais a respeito dos métodos posteriormente):<br><br>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				>>>
+				>>> cubes.append(216)  # add the cube of 6
+				>>> cubes.append(7 ** 3)  # and the cube of 7
+				>>> cubes
+				[1, 8, 27, 64, 125, 216, 343]	
+				</code>
+			</pre>
+		</div>
+
+		Atribuição a fatias também é possível, e isso pode até alterar o tamanho da lista ou remover todos os itens dela:<br><br>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				>>>
+				>>> letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
+				>>> letters
+				['a', 'b', 'c', 'd', 'e', 'f', 'g']
+				>>> # replace some values
+				>>> letters[2:5] = ['C', 'D', 'E']
+				>>> letters
+				['a', 'b', 'C', 'D', 'E', 'f', 'g']
+				>>> # now remove them
+				>>> letters[2:5] = []
+				>>> letters
+				['a', 'b', 'f', 'g']
+				>>> # clear the list by replacing all the elements with an empty list
+				>>> letters[:] = []
+				>>> letters
+				[]	
+				</code>
+			</pre>
+		</div>
+
+		A função embutida len() também se aplica a listas:<br><br>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				>>>
+				>>> letters = ['a', 'b', 'c', 'd']
+				>>> len(letters)
+				4	
+				</code>
+			</pre>
+		</div>
+
+		É possível aninhar listas (criar listas contendo outras listas), por exemplo:<br><br>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				>>>
+				>>> a = ['a', 'b', 'c']
+				>>> n = [1, 2, 3]
+				>>> x = [a, n]
+				>>> x
+				[['a', 'b', 'c'], [1, 2, 3]]
+				>>> x[0]
+				['a', 'b', 'c']
+				>>> x[0][1]
+				'b'	
+				</code>
+			</pre>
+		</div>
+		
+		<h3 id="3.2">3.2. Primeiros passos para a programação<a class="a-indice" href="#00"><sub>&nbsp;índice</sub></a></h3>
+		Claro, podemos usar o Python para tarefas mais complicadas do que somar 2+2. Por exemplo, podemos escrever o início da sequência de Fibonacci assim:<br><br>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				>>>
+				>>> # Fibonacci series:
+				... # the sum of two elements defines the next
+				... a, b = 0, 1
+				>>> while a < 10:
+				...     print(a)
+				...     a, b = b, a+b
+				...
+				0
+				1
+				1
+				2
+				3
+				5
+				8	
+				</code>
+			</pre>
+		</div>
+
+		Este exemplo introduz diversas características ainda não mencionadas.<br><br>
+
+		A primeira linha contém uma atribuição múltipla: as variáveis a e b recebem simultaneamente os novos valores 0 e 1. Na última linha há outro exemplo de atribuição múltipla demonstrando que expressões do lado direito são sempre avaliadas primeiro, antes da atribuição. As expressões do lado direito são avaliadas da esquerda para a direita.<br><br>
+
+		O laço de repetição while executa enquanto a condição (aqui: a < 10) permanece verdadeira. Em Python, como em C, qualquer valor inteiro que não seja zero é considerado verdadeiro; zero é considerado falso. A condição pode também ser uma cadeia de caracteres ou uma lista, ou qualquer sequência; qualquer coisa com um tamanho maior que zero é verdadeiro, enquanto sequências vazias são falsas. O teste usado no exemplo é uma comparação simples. Os operadores padrões de comparação são os mesmos de C: < (menor que), > (maior que), == (igual), <= (menor ou igual), >= (maior ou igual) e != (diferente).<br><br>
+
+		O corpo do laço é indentado: indentação em Python é a maneira de agrupar comandos em blocos. No console interativo padrão você terá que digitar tab ou espaços para indentar cada linha. Na prática você vai preparar scripts Python mais complicados em um editor de texto; a maioria dos editores de texto tem facilidades de indentação automática. Quando um comando composto é digitado interativamente, deve ser finalizado por uma linha em branco (já que o interpretador não tem como adivinhar qual é a última linha do comando). Observe que toda linha de um mesmo bloco de comandos deve ter a mesma indentação.<br><br>
+
+		A função print() escreve o valor dos argumentos fornecidos. É diferente de apenas escrever a expressão no interpretador (como fizemos anteriormente nos exemplos da calculadora) pela forma como lida com múltiplos argumentos, quantidades de ponto flutuante e strings. As strings são impressas sem aspas, e um espaço é inserido entre os itens, assim você pode formatar bem o resultado, dessa forma:<br><br>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				>>>
+				>>> i = 256*256
+				>>> print('The value of i is', i)
+				The value of i is 65536	
+				</code>
+			</pre>
+		</div>	
+		O argumento end pode ser usado para evitar uma nova linha após a saída ou finalizar a saída com uma string diferente:<br><br>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				>>>
+				>>> a, b = 0, 1
+				>>> while a < 1000:
+				...     print(a, end=',')
+				...     a, b = b, a+b
+				...
+				0,1,1,2,3,5,8,13,21,34,55,89,144,233,377,610,987,	
+				</code>
+			</pre>
+		</div>
+
+		<blockquote>
+			Notas de rodapé<br>
+			1 Uma vez que ** tem precedência mais alta que -, -3**2 será interpretado como -(3**2) e assim resultará em -9. Para evitar isso e obter 9, você pode usar (-3)**2.<br>
+			2 Ao contrário de outras linguagens, caracteres especiais como \n têm o mesmo significado com as aspas simples ('...') e duplas ("...") . A única diferença entre as duas é que, dentro de aspas simples, você não precisa escapar o " (mas você deve escapar a \') e vice-versa.
+		</blockquote>
+
+		<h3 id="4">4. Mais ferramentas de controle de fluxo<a class="a-indice" href="#00"><sub>&nbsp;índice</sub></a></h3>
+		Além do comando while recém apresentado, Python tem as estruturas usuais de controle de fluxo conhecidas em outras linguagens, com algumas particulares.<br><br>
+
+		<h3 id="4.1">4.1. Comandos if<a class="a-indice" href="#00"><sub>&nbsp;índice</sub></a></h3>
+		Provavelmente o mais conhecido comando de controle de fluxo é o if. Por exemplo:<br><br>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				>>>
+				>>> x = int(input("Please enter an integer: "))
+				Please enter an integer: 42
+				>>> if x < 0:
+				...     x = 0
+				...     print('Negative changed to zero')
+				... elif x == 0:
+				...     print('Zero')
+				... elif x == 1:
+				...     print('Single')
+				... else:
+				...     print('More')
+				...	
+				</code>
+			</pre>
+		</div>
+
+		More<br>
+		Pode haver zero ou mais partes elif, e a parte else é opcional. A palavra-chave ‘elif’ é uma abreviação para ‘else if’, e é útil para evitar indentação excessiva. Uma sequência if … elif … elif … substitui os comandos switch ou case, encontrados em outras linguagens.<br><br>
+
+		Se você está comparando o mesmo valor com várias constantes, ou verificando por tipos ou atributos específicos, você também pode achar a instrução match útil. Para mais detalhes veja Instruções match.<br><br>
+
+		<h3 id="4.2">4.2. Comandos for<a class="a-indice" href="#00"><sub>&nbsp;índice</sub></a></h3>		
+		O comando for em Python é um pouco diferente do que costuma ser em C ou Pascal. Ao invés de sempre iterar sobre uma progressão aritmética de números (como no Pascal), ou permitir ao usuário definir o passo de iteração e a condição de parada (como C), o comando for do Python itera sobre os itens de qualquer sequência (seja uma lista ou uma string), na ordem que aparecem na sequência. Por exemplo:<br><br>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				>>>
+				>>> # Measure some strings:
+				... words = ['cat', 'window', 'defenestrate']
+				>>> for w in words:
+				...     print(w, len(w))
+				...
+				cat 3
+				window 6
+				defenestrate 12	
+				</code>
+			</pre>
+		</div>
+
+		Código que modifica uma coleção sobre a qual está iterando pode ser inseguro. No lugar disso, usualmente você deve iterar sobre uma cópia da coleção ou criar uma nova coleção:<br><br>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				# Create a sample collection
+				users = {'Hans': 'active', 'Éléonore': 'inactive', '景太郎': 'active'}
+
+				# Strategy:  Iterate over a copy
+				for user, status in users.copy().items():
+				    if status == 'inactive':
+				        del users[user]
+
+				# Strategy:  Create a new collection
+				active_users = {}
+				for user, status in users.items():
+				    if status == 'active':
+				        active_users[user] = status	
+				</code>
+			</pre>
+		</div>
+
+		<h3 id="4.3">4.3. A função range()<a class="a-indice" href="#00"><sub>&nbsp;índice</sub></a></h3>
+		Se você precisa iterar sobre sequências numéricas, a função embutida range() é a resposta. Ela gera progressões aritméticas:<br><br>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				>>>
+				>>> for i in range(5):
+				...     print(i)
+				...
+				0
+				1
+				2
+				3
+				4	
+				</code>
+			</pre>
+		</div>
+
+		O ponto de parada fornecido nunca é incluído na lista; range(10) gera uma lista com 10 valores, exatamente os índices válidos para uma sequência de comprimento 10. É possível iniciar o intervalo com outro número, ou alterar a razão da progressão (inclusive com passo negativo):<br><br>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				>>>
+				>>> list(range(5, 10))
+				[5, 6, 7, 8, 9]
+
+				>>> list(range(0, 10, 3))
+				[0, 3, 6, 9]
+
+				>>> list(range(-10, -100, -30))
+				[-10, -40, -70]	
+				</code>
+			</pre>
+		</div>
+
+		Para iterar sobre os índices de uma sequência, combine range() e len() da seguinte forma:<br><br>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				>>>
+				>>> a = ['Mary', 'had', 'a', 'little', 'lamb']
+				>>> for i in range(len(a)):
+				...     print(i, a[i])
+				...
+				0 Mary
+				1 had
+				2 a
+				3 little
+				4 lamb	
+				</code>
+			</pre>
+		</div>
+
+		Na maioria dos casos, porém, é mais conveniente usar a função enumerate(), veja Técnicas de iteração.<br><br>
+
+		Uma coisa estranha acontece se você imprime um intervalo:<br><br>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				>>>
+				>>> range(10)
+				range(0, 10)	
+				</code>
+			</pre>
+		</div>
+
+		Em muitos aspectos, o objeto retornado pela função range() se comporta como se fosse uma lista, mas na verdade não é. É um objeto que retorna os itens sucessivos da sequência desejada quando você itera sobre a mesma, mas na verdade ele não gera a lista, economizando espaço.<br><br>
+
+		Dizemos que um objeto é iterável, isso é, candidato a ser alvo de uma função ou construção que espera alguma coisa capaz de retornar sucessivamente seus elementos um de cada vez. Nós vimos que o comando for é um exemplo de construção, enquanto que um exemplo de função que recebe um iterável é sum():<br><br>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				>>>
+				>>> sum(range(4))  # 0 + 1 + 2 + 3
+				6	
+				</code>
+			</pre>
+		</div>
+
+		Mais tarde, veremos mais funções que retornam iteráveis e tomam iteráveis como argumentos. No capítulo Estruturas de dados, iremos discutir em mais detalhes sobre list().<br><br>
+
+		<h3 id="4.4">4.4. Comandos break e continue, e cláusula else, nos laços de repetição<a class="a-indice" href="#00"><sub>&nbsp;índice</sub></a></h3>
+		O comando break, como no C, sai imediatamente do laço de repetição mais interno, seja for ou while.<br><br>
+
+		Laços podem ter uma cláusula else, que é executada sempre que o laço se encerra por exaustão do iterável (no caso do for) ou quando a condição se torna falsa (no caso do while), mas nunca quando o laço é interrompido por um break. Isto é exemplificado no próximo exemplo que procura números primos:<br><br>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				>>>
+				>>> for n in range(2, 10):
+				...     for x in range(2, n):
+				...         if n % x == 0:
+				...             print(n, 'equals', x, '*', n//x)
+				...             break
+				...     else:
+				...         # loop fell through without finding a factor
+				...         print(n, 'is a prime number')
+				...
+				2 is a prime number
+				3 is a prime number
+				4 equals 2 * 2
+				5 is a prime number
+				6 equals 2 * 3
+				7 is a prime number
+				8 equals 2 * 4
+				9 equals 3 * 3	
+				</code>
+			</pre>
+		</div>
+
+		(Sim, o código está correto. Olhe atentamente: a cláusula else pertence ao laço for, e não ao comando if.)<br><br>
+
+		Quando usado em um laço, a cláusula else tem mais em comum com a cláusula else de um comando try do que com a de um comando if: a cláusula else de um comando try executa quando não ocorre exceção, e o else de um laço executa quando não ocorre um break. Para mais informações sobre comando try e exceções, veja Tratamento de exceções.<br><br>
+
+		A instrução continue, também emprestada da linguagem C, continua com a próxima iteração do laço:<br><br>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				>>>
+				>>> for num in range(2, 10):
+				...     if num % 2 == 0:
+				...         print("Found an even number", num)
+				...         continue
+				...     print("Found an odd number", num)
+				...
+				Found an even number 2
+				Found an odd number 3
+				Found an even number 4
+				Found an odd number 5
+				Found an even number 6
+				Found an odd number 7
+				Found an even number 8
+				Found an odd number 9	
+				</code>
+			</pre>
+		</div>
+
+		<h3 id="4.5">4.5. Comandos pass<a class="a-indice" href="#00"><sub>&nbsp;índice</sub></a></h3>
+		O comando pass não faz nada. Pode ser usada quando a sintaxe exige um comando mas a semântica do programa não requer nenhuma ação. Por exemplo:<br><br>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				>>>
+				>>> while True:
+				...     pass  # Busy-wait for keyboard interrupt (Ctrl+C)
+				...
+				Isto é usado muitas vezes para se definir classes mínimas:
+
+				>>>
+				>>> class MyEmptyClass:
+				...     pass
+				...	
+				</code>
+			</pre>
+		</div>
+
+		Outra ocasião em que o pass pode ser usado é como um substituto temporário para uma função ou bloco condicional, quando se está trabalhando com código novo, ainda indefinido, permitindo que mantenha-se o pensamento num nível mais abstrato. O pass é silenciosamente ignorado:<br><br>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				>>>
+				>>> def initlog(*args):
+				...     pass   # Remember to implement this!
+				...	
+				</code>
+			</pre>
+		</div>
+
+		<h3 id="4.6">4.6. Instruções match<a class="a-indice" href="#00"><sub>&nbsp;índice</sub></a></h3>
+		Uma instrução de correspondência pega uma expressão e compara seu valor com padrões sucessivos fornecidos como um ou mais blocos de case. Isso é superficialmente semelhante a uma instrução switch em C, Java ou JavaScript (e muitas outras linguagens), mas também pode extrair componentes (elementos de sequência ou atributos de objeto) do valor em variáveis.<br><br>
+
+		A forma mais simples compara um valor de assunto com um ou mais literais:<br><br>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				def http_error(status):
+				    match status:
+				        case 400:
+				            return "Bad request"
+				        case 404:
+				            return "Not found"
+				        case 418:
+				            return "I'm a teapot"
+				        case _:
+				            return "Something's wrong with the internet"	
+				</code>
+			</pre>
+		</div>
+
+		Observe o último bloco: o “nome da variável” _ atua como um curinga e nunca falha em corresponder. Se nenhum caso corresponder, nenhuma das ramificações será executada.<br><br>
+
+		Você pode combinar vários literais em um único padrão usando | (“ou”):<br><br>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				case 401 | 403 | 404:
+				    return "Not allowed"	
+				</code>
+			</pre>
+		</div>
+
+		Os padrões podem se parecer com atribuições de desempacotamento e podem ser usados para vincular variáveis:<br><br>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				# point is an (x, y) tuple
+				match point:
+				    case (0, 0):
+				        print("Origin")
+				    case (0, y):
+				        print(f"Y={y}")
+				    case (x, 0):
+				        print(f"X={x}")
+				    case (x, y):
+				        print(f"X={x}, Y={y}")
+				    case _:
+				        raise ValueError("Not a point")	
+				</code>
+			</pre>
+		</div>
+
+		Estude isso com cuidado! O primeiro padrão tem dois literais e pode ser considerado uma extensão do padrão literal mostrado acima. Mas os próximos dois padrões combinam um literal e uma variável, e a variável vincula um valor do assunto (point). O quarto padrão captura dois valores, o que o torna conceitualmente semelhante à atribuição de desempacotamento (x, y) = point.<br><br>
+
+		Se você estiver usando classes para estruturar seus dados, você pode usar o nome da classe seguido por uma lista de argumentos semelhante a um construtor, mas com a capacidade de capturar atributos em variáveis:<br><br>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				class Point:
+				    x: int
+				    y: int
+
+				def where_is(point):
+				    match point:
+				        case Point(x=0, y=0):
+				            print("Origin")
+				        case Point(x=0, y=y):
+				            print(f"Y={y}")
+				        case Point(x=x, y=0):
+				            print(f"X={x}")
+				        case Point():
+				            print("Somewhere else")
+				        case _:
+				            print("Not a point")	
+				</code>
+			</pre>
+		</div>
+
+		Você pode usar parâmetros posicionais com algumas classes embutidas que fornecem uma ordem para seus atributos (por exemplo, classes de dados). Você também pode definir uma posição específica para atributos em padrões configurando o atributo especial __match_args__ em suas classes. Se for definido como (“x”, “y”), os seguintes padrões são todos equivalentes (e todos vinculam o atributo y à variável var):<br><br>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				Point(1, var)
+				Point(1, y=var)
+				Point(x=1, y=var)
+				Point(y=var, x=1)	
+				</code>
+			</pre>
+		</div>
+
+		Uma maneira recomendada de ler padrões é vê-los como uma forma estendida do que você colocaria à esquerda de uma atribuição, para entender quais variáveis seriam definidas para quê. Apenas os nomes autônomos (como var acima) são atribuídos por uma instrução de correspondência. Nomes pontilhados (como foo.bar), nomes de atributos (o x= e y= acima) ou nomes de classes (reconhecidos pelo “(…)” próximo a eles, como Point acima) nunca são atribuídos.<br><br>
+
+		Os padrões podem ser aninhados arbitrariamente. Por exemplo, se tivermos uma pequena lista de pontos, poderíamos correspondê-la assim:<br><br>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				match points:
+				    case []:
+				        print("No points")
+				    case [Point(0, 0)]:
+				        print("The origin")
+				    case [Point(x, y)]:
+				        print(f"Single point {x}, {y}")
+				    case [Point(0, y1), Point(0, y2)]:
+				        print(f"Two on the Y axis at {y1}, {y2}")
+				    case _:
+				        print("Something else")	
+				</code>
+			</pre>
+		</div>
+
+		Podemos adicionar uma cláusula if a um padrão, conhecido como “guarda”. Se a guarda for falsa, match continua para tentar o próximo bloco de caso. Observe que a captura de valor ocorre antes que a guarda seja avaliada:<br><br>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				match point:
+				    case Point(x, y) if x == y:
+				        print(f"Y=X at {x}")
+				    case Point(x, y):
+				        print(f"Not on the diagonal")	
+				</code>
+			</pre>
+		</div>
+
+		Vários outros recursos importantes desta instrução:<br><br>
+
+		Assim como desempacotar atribuições, os padrões de tupla e lista têm exatamente o mesmo significado e realmente correspondem a sequências arbitrárias. Uma exceção importante é que eles não correspondem a iteradores ou strings.<br><br>
+
+		Os padrões de sequência têm suporte ao desempacotamento estendido: [x, y, *rest] e (x, y, *rest) funcionam de forma semelhante ao desempacotamento de atribuições. O nome depois de * também pode ser _, então (x, y, *_) corresponde a uma sequência de pelo menos dois itens sem ligar os itens restantes.<br><br>
+
+		Mapping patterns: {"bandwidth": b, "latency": l} captures the "bandwidth" and "latency" values from a dictionary. Unlike sequence patterns, extra keys are ignored. An unpacking like **rest is also supported. (But **_ would be redundant, so it is not allowed.)<br><br>
+
+		Subpadrões podem ser capturados usando a palavra reservada as:<br><br>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				case (Point(x1, y1), Point(x2, y2) as p2): ...	
+				</code>
+			</pre>
+		</div>
+
+		Vai capturar o segundo elemento da entrada como p2 (se a entrada for uma sequência de dois pontos)<br><br>
+
+		A maioria dos literais são comparados por igualdade, no entando os singletons True, False e None são comparados por identidade.<br><br>
+
+		Padrões podem usar constantes nomeadas. Estas devem ser nomes pontilhados para prevenir que sejam interpretadas como variáveis de captura:<br><br>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				from enum import Enum
+				class Color(Enum):
+				    RED = 'red'
+				    GREEN = 'green'
+				    BLUE = 'blue'
+
+				color = Color(input("Enter your choice of 'red', 'blue' or 'green': "))
+
+				match color:
+				    case Color.RED:
+				        print("I see red!")
+				    case Color.GREEN:
+				        print("Grass is green")
+				    case Color.BLUE:
+				        print("I'm feeling the blues :(")	
+				</code>
+			</pre>
+		</div>
+
+		Para uma explicação mais detalhada e exemplos adicionais, você pode olhar PEP 636 que foi escrita em formato de tutorial.<br><br>
+
+		<h3 id="4.7">4.7. Definindo funções<a class="a-indice" href="#00"><sub>&nbsp;índice</sub></a></h3>
+		Podemos criar uma função que escreve a série de Fibonacci até um limite arbitrário:<br><br>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				>>>
+				>>> def fib(n):    # write Fibonacci series up to n
+				...     """Print a Fibonacci series up to n."""
+				...     a, b = 0, 1
+				...     while a < n:
+				...         print(a, end=' ')
+				...         a, b = b, a+b
+				...     print()
+				...
+				>>> # Now call the function we just defined:
+				... fib(2000)
+				0 1 1 2 3 5 8 13 21 34 55 89 144 233 377 610 987 1597	
+				</code>
+			</pre>
+		</div>
+
+		A palavra reservada def inicia a definição de uma função. Ela deve ser seguida do nome da função e da lista de parâmetros formais entre parênteses. Os comandos que formam o corpo da função começam na linha seguinte e devem ser indentados.<br><br>
+
+		Opcionalmente, a primeira linha do corpo da função pode ser uma literal string, cujo propósito é documentar a função. Se presente, essa string chama-se docstring. (Há mais informação sobre docstrings na seção Strings de documentação.) Existem ferramentas que utilizam docstrings para produzir automaticamente documentação online ou para imprimir, ou ainda, permitir que o usuário navegue interativamente pelo código. É uma boa prática incluir sempre docstrings em suas funções, portanto, tente fazer disso um hábito.<br><br>
+
+		A execução de uma função cria uma nova tabela de símbolos para as variáveis locais da função. Mais precisamente, todas as atribuições de variáveis numa função são armazenadas na tabela de símbolos local; referências a variáveis são buscadas primeiro na tabela de símbolos local, em seguida na tabela de símbolos locais de funções delimitadoras ou circundantes, depois na tabela de símbolos global e, finalmente, na tabela de nomes da própria linguagem. Embora possam ser referenciadas, variáveis globais e de funções externas não podem ter atribuições (a menos que seja utilizado o comando global, para variáveis globais, ou nonlocal, para variáveis de funções externas).<br><br>
+
+		Os parâmetros reais (argumentos) de uma chamada de função são introduzidos na tabela de símbolos local da função no momento da chamada; portanto, argumentos são passados por valor (onde o valor é sempre uma referência para objeto, não o valor do objeto). 1 Quando uma função chama outra função, ou chama a si mesma recursivamente, uma nova tabela de símbolos é criada para tal chamada.<br><br>
+
+		Uma definição de função associa o nome da função com o objeto função na tabela de símbolos atual. O interpretador reconhece o objeto apontado pelo nome como uma função definida pelo usuário. Outros nomes também podem apontar para o mesmo objeto função e também pode ser usados pra acessar a função:<br><br>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				>>>
+				>>> fib
+				<function fib at 10042ed0>
+				>>> f = fib
+				>>> f(100)
+				0 1 1 2 3 5 8 13 21 34 55 89	
+				</code>
+			</pre>
+		</div>
+
+		Conhecendo outras linguagens, pode-se questionar que fib não é uma função, mas um procedimento, pois ela não devolve um valor. Na verdade, mesmo funções que não usam o comando return devolvem um valor, ainda que pouco interessante. Esse valor é chamado None (é um nome embutido). O interpretador interativo evita escrever None quando ele é o único resultado de uma expressão. Mas se quiser vê-lo pode usar a função print():<br><br>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				>>>
+				>>> fib(0)
+				>>> print(fib(0))
+				None	
+				</code>
+			</pre>
+		</div>
+
+		É fácil escrever uma função que retorna uma lista de números da série de Fibonacci, ao invés de exibi-los:<br><br>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				>>>
+				>>> def fib2(n):  # return Fibonacci series up to n
+				...     """Return a list containing the Fibonacci series up to n."""
+				...     result = []
+				...     a, b = 0, 1
+				...     while a < n:
+				...         result.append(a)    # see below
+				...         a, b = b, a+b
+				...     return result
+				...
+				>>> f100 = fib2(100)    # call it
+				>>> f100                # write the result
+				[0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]	
+				</code>
+			</pre>
+		</div>
+
+		Este exemplo demonstra novos recursos de Python:<br><br>
+
+		A instrução return finaliza a execução e retorna um valor da função. return sem qualquer expressão como argumento retorna None. Atingir o final da função também retorna None.<br><br>
+
+		A instrução result.append(a) chama um método do objeto lista result. Um método é uma função que ‘pertence’ a um objeto, e é chamada obj.nomemetodo, onde obj é um objeto qualquer (pode ser uma expressão), e nomemetodo é o nome de um método que foi definido pelo tipo do objeto. Tipos diferentes definem métodos diferentes. Métodos de diferentes tipos podem ter o mesmo nome sem ambiguidade. (É possível definir seus próprios tipos de objetos e métodos, utilizando classes, veja em Classes) O método append(), mostrado no exemplo é definido para objetos do tipo lista; adiciona um novo elemento ao final da lista. Neste exemplo, ele equivale a result = result + [a], só que mais eficiente.<br><br>
+
+		<h3 id="4.8">4.8. Mais sobre definição de funções<a class="a-indice" href="#00"><sub>&nbsp;índice</sub></a></h3>
+		É possível definir funções com um número variável de argumentos. Existem três formas, que podem ser combinadas.<br><br>
+
+		<h3 id="4.8.1">4.8.1. Argumentos com valor padrão<a class="a-indice" href="#00"><sub>&nbsp;índice</sub></a></h3>
+		A mais útil das três é especificar um valor padrão para um ou mais argumentos. Isso cria uma função que pode ser invocada com menos argumentos do que os que foram definidos. Por exemplo:<br><br>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				def ask_ok(prompt, retries=4, reminder='Please try again!'):
+				    while True:
+				        ok = input(prompt)
+				        if ok in ('y', 'ye', 'yes'):
+				            return True
+				        if ok in ('n', 'no', 'nop', 'nope'):
+				            return False
+				        retries = retries - 1
+				        if retries < 0:
+				            raise ValueError('invalid user response')
+				        print(reminder)	
+				</code>
+			</pre>
+		</div>
+
+		Essa função pode ser chamada de várias formas:<br><br>
+
+		fornecendo apenas o argumento obrigatório: ask_ok('Do you really want to quit?')<br><br>
+
+		fornecendo um dos argumentos opcionais: ask_ok('OK to overwrite the file?', 2)<br><br>
+
+		ou fornecendo todos os argumentos: ask_ok('OK to overwrite the file?', 2, 'Come on, only yes or no!')<br><br>
+
+		Este exemplo também introduz a palavra-chave in, que verifica se uma sequência contém ou não um determinado valor.<br><br>
+
+		Os valores padrões são avaliados no momento da definição da função, e no escopo em que a função foi definida, portanto:<br><br>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				i = 5
+
+				def f(arg=i):
+				    print(arg)
+
+				i = 6
+				f()
+				irá exibir 5.	
+				</code>
+			</pre>
+		</div>
+
+		Aviso importante: Valores padrões são avaliados apenas uma vez. Isso faz diferença quando o valor é um objeto mutável, como uma lista, dicionário, ou instâncias de classes. Por exemplo, a função a seguir acumula os argumentos passados, nas chamadas subsequentes:<br><br>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				def f(a, L=[]):
+				    L.append(a)
+				    return L
+
+				print(f(1))
+				print(f(2))
+				print(f(3))
+				Isso exibirá:
+
+				[1]
+				[1, 2]
+				[1, 2, 3]	
+				</code>
+			</pre>
+		</div>
+
+		Se não quiser que o valor padrão seja compartilhado entre chamadas subsequentes, pode reescrever a função assim:<br><br>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				def f(a, L=None):
+				    if L is None:
+				        L = []
+				    L.append(a)
+				    return L	
+				</code>
+			</pre>
+		</div>
+
+		<h3 id="4.8.2">4.8.2. Argumentos nomeados<a class="a-indice" href="#00"><sub>&nbsp;índice</sub></a></h3>
+		Funções também podem ser chamadas usando argumentos nomeados da forma chave=valor. Por exemplo, a função a seguir:<br><br>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				def parrot(voltage, state='a stiff', action='voom', type='Norwegian Blue'):
+				    print("-- This parrot wouldn't", action, end=' ')
+				    print("if you put", voltage, "volts through it.")
+				    print("-- Lovely plumage, the", type)
+				    print("-- It's", state, "!")	
+				</code>
+			</pre>
+		</div>				    
+
+		aceita um argumento obrigatório (voltage) e três argumentos opcionais (state, action, e type). Esta função pode ser chamada de qualquer uma dessas formas:<br><br>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				parrot(1000)                                          # 1 positional argument
+				parrot(voltage=1000)                                  # 1 keyword argument
+				parrot(voltage=1000000, action='VOOOOOM')             # 2 keyword arguments
+				parrot(action='VOOOOOM', voltage=1000000)             # 2 keyword arguments
+				parrot('a million', 'bereft of life', 'jump')         # 3 positional arguments
+				parrot('a thousand', state='pushing up the daisies')  # 1 positional, 1 keyword	
+				</code>
+			</pre>
+		</div>
+
+		mas todas as formas a seguir seriam inválidas:<br><br>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				parrot()                     # required argument missing
+				parrot(voltage=5.0, 'dead')  # non-keyword argument after a keyword argument
+				parrot(110, voltage=220)     # duplicate value for the same argument
+				parrot(actor='John Cleese')  # unknown keyword argument	
+				</code>
+			</pre>
+		</div>
+
+		Em uma chamada de função, argumentos nomeados devem vir depois dos argumentos posicionais. Todos os argumentos nomeados passados devem corresponder com argumentos aceitos pela função (ex. actor não é um argumento nomeado válido para a função parrot), mas sua ordem é irrelevante. Isto também inclui argumentos obrigatórios (ex.: parrot(voltage=1000) funciona). Nenhum argumento pode receber mais de um valor. Eis um exemplo que não funciona devido a esta restrição:<br><br>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				>>>
+				>>> def function(a):
+				...     pass
+				...
+				>>> function(0, a=0)
+				Traceback (most recent call last):
+				  File "<stdin>", line 1, in <module>
+				TypeError: function() got multiple values for argument 'a'	
+				</code>
+			</pre>
+		</div>
+
+		Quando um último parâmetro formal no formato **nome está presente, ele recebe um dicionário (veja Tipo mapeamento — dict) contendo todos os argumentos nomeados, exceto aqueles que correspondem a um parâmetro formal. Isto pode ser combinado com um parâmetro formal no formato *nome (descrito na próxima subseção) que recebe uma tupla contendo os argumentos posicionais, além da lista de parâmetros formais. (*nome deve ocorrer antes de **nome.) Por exemplo, se definirmos uma função assim:<br><br>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				def cheeseshop(kind, *arguments, **keywords):
+				    print("-- Do you have any", kind, "?")
+				    print("-- I'm sorry, we're all out of", kind)
+				    for arg in arguments:
+				        print(arg)
+				    print("-" * 40)
+				    for kw in keywords:
+				        print(kw, ":", keywords[kw])	
+				</code>
+			</pre>
+		</div>
+
+		Pode ser chamada assim:<br><br>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				cheeseshop("Limburger", "It's very runny, sir.",
+				           "It's really very, VERY runny, sir.",
+				           shopkeeper="Michael Palin",
+				           client="John Cleese",
+				           sketch="Cheese Shop Sketch")	
+				</code>
+			</pre>
+		</div>
+
+		e, claro, exibiria:<br><br>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				-- Do you have any Limburger ?
+				-- I'm sorry, we're all out of Limburger
+				It's very runny, sir.
+				It's really very, VERY runny, sir.
+				----------------------------------------
+				shopkeeper : Michael Palin
+				client : John Cleese
+				sketch : Cheese Shop Sketch	
+				</code>
+			</pre>
+		</div>
+
+		Observe que a ordem em que os argumentos nomeados são exibidos é garantida para corresponder à ordem em que foram fornecidos na chamada da função.<br><br>
+
+		<h3 id="4.8.3">4.8.3. Parâmetros especiais<a class="a-indice" href="#00"><sub>&nbsp;índice</sub></a></h3>
+		Por padrão, argumentos podem ser passadas para uma função Python tanto por posição quanto explicitamente pelo nome. Para uma melhor legibilidade e desempenho, faz sentido restringir a maneira pelo qual argumentos possam ser passados, assim um desenvolvedor precisa apenas olhar para a definição da função para determinar se os itens são passados por posição, por posição e nome, ou por nome.<br><br>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				A definição de uma função pode parecer com:<br><br>
+
+				def f(pos1, pos2, /, pos_or_kwd, *, kwd1, kwd2):
+				      -----------    ----------     ----------
+				        |             |                  |
+				        |        Positional or keyword   |
+				        |                                - Keyword only
+				         -- Positional only	
+				</code>
+			</pre>
+		</div>
+
+		onde / e * são opcionais. Se usados, esses símbolos indicam o tipo de parâmetro pelo qual os argumentos podem ser passados para as funções: somente-posicional, posicional-ou-nomeado, e somente-nomeado. Parâmetros nomeados são também conhecidos como parâmetros palavra-chave.<br><br>
+
+		<h3 id="4.8.3.1">4.8.3.1. Argumentos posicional-ou-nomeados<a class="a-indice" href="#00"><sub>&nbsp;índice</sub></a></h3>
+		Se / e * não estão presentes na definição da função, argumentos podem ser passados para uma função por posição ou por nome.<br><br>
+
+		<h3 id="4.8.3.2">4.8.3.2. Parâmetros somente-posicionais<a class="a-indice" href="#00"><sub>&nbsp;índice</sub></a></h3>
+		Olhando com um pouco mais de detalhes, é possível definir certos parâmetros como somente-posicional. Se somente-posicional, a ordem do parâmetro importa, e os parâmetros não podem ser passados por nome. Parâmetros somente-posicional são colocados antes de / (barra). A / é usada para logicamente separar os argumentos somente-posicional dos demais parâmetros. Se não existe uma / na definição da função, não existe parâmetros somente-posicionais.<br><br>
+
+		Parâmetros após a / podem ser posicional-ou-nomeado ou somente-nomeado.<br><br>
+
+		<h3 id="4.8.3.3">4.8.3.3. Argumentos somente-nomeados<a class="a-indice" href="#00"><sub>&nbsp;índice</sub></a></h3>
+		Para definir parâmetros como somente-nomeado, indicando que o parâmetro deve ser passado por argumento nomeado, colocamos um * na lista de argumentos imediatamente antes do primeiro parâmetro somente-nomeado.<br><br>
+
+		<h3 id="4.8.3.4">4.8.3.4. Exemplos de funções<a class="a-indice" href="#00"><sub>&nbsp;índice</sub></a></h3>
+		Considere o seguinte exemplo de definição de função com atenção redobrada para os marcadores / e *:<br><br>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				>>>
+				>>> def standard_arg(arg):
+				...     print(arg)
+				...
+				>>> def pos_only_arg(arg, /):
+				...     print(arg)
+				...
+				>>> def kwd_only_arg(*, arg):
+				...     print(arg)
+				...
+				>>> def combined_example(pos_only, /, standard, *, kwd_only):
+				...     print(pos_only, standard, kwd_only)	
+				</code>
+			</pre>
+		</div>
+
+		A definição da primeira função, standard_arg, a forma mais familiar, não coloca nenhuma restrição para a chamada da função e argumentos podem ser passados por posição ou nome:<br><br>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				>>>
+				>>> standard_arg(2)
+				2
+
+				>>> standard_arg(arg=2)
+				2	
+				</code>
+			</pre>
+		</div>
+
+		A segunda função pos_only_arg está restrita ao uso de parâmetros somente posicionais, uma vez que existe uma / na definição da função:<br><br>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				>>>
+				>>> pos_only_arg(1)
+				1
+
+				>>> pos_only_arg(arg=1)
+				Traceback (most recent call last):
+				  File "<stdin>", line 1, in <module>
+				TypeError: pos_only_arg() got some positional-only arguments passed as keyword arguments: 'arg'	
+				</code>
+			</pre>
+		</div>
+
+		A terceira função kwd_only_args permite somente argumentos nomeados como indicado pelo * na definição da função:<br><br>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				>>>
+				>>> kwd_only_arg(3)
+				Traceback (most recent call last):
+				  File "<stdin>", line 1, in <module>
+				TypeError: kwd_only_arg() takes 0 positional arguments but 1 was given
+
+				>>> kwd_only_arg(arg=3)
+				3	
+				</code>
+			</pre>
+		</div>
+
+		E a última usa as três convenções de chamada na mesma definição de função:<br><br>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				>>>
+				>>> combined_example(1, 2, 3)
+				Traceback (most recent call last):
+				  File "<stdin>", line 1, in <module>
+				TypeError: combined_example() takes 2 positional arguments but 3 were given
+
+				>>> combined_example(1, 2, kwd_only=3)
+				1 2 3
+
+				>>> combined_example(1, standard=2, kwd_only=3)
+				1 2 3
+
+				>>> combined_example(pos_only=1, standard=2, kwd_only=3)
+				Traceback (most recent call last):
+				  File "<stdin>", line 1, in <module>
+				TypeError: combined_example() got some positional-only arguments passed as keyword arguments: 'pos_only'	
+				</code>
+			</pre>
+		</div>
+
+		Finalmente, considere essa definição de função que possui uma potencial colisão entre o argumento posicional name e **kwds que possui name como uma chave:<br><br>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				def foo(name, **kwds):
+				    return 'name' in kwds	
+				</code>
+			</pre>
+		</div>
+
+		Não é possível essa chamada devolver True, uma vez que a chave 'name' sempre será aplicada para o primeiro parâmetro. Por exemplo:<br><br>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				>>>
+				>>> foo(1, **{'name': 2})
+				Traceback (most recent call last):
+				  File "<stdin>", line 1, in <module>
+				TypeError: foo() got multiple values for argument 'name'
+				>>>	
+				</code>
+			</pre>
+		</div>
+
+		Mas usando / (somente argumentos posicionais), isso é possível já que permite name como um argumento posicional e 'name' como uma chave nos argumentos nomeados:<br><br>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				def foo(name, /, **kwds):
+				    return 'name' in kwds
+				>>> foo(1, **{'name': 2})
+				True	
+				</code>
+			</pre>
+		</div>
+
+		Em outras palavras, o nome de parâmetros somente-posicional podem ser usados em **kwds sem ambiguidade.<br><br>
+
+		<h3 id="4.8.3.5">4.8.3.5. Recapitulando<a class="a-indice" href="#00"><sub>&nbsp;índice</sub></a></h3>
+		A situação irá determinar quais parâmetros usar na definição da função:<br><br>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				def f(pos1, pos2, /, pos_or_kwd, *, kwd1, kwd2):	
+				</code>
+			</pre>
+		</div>
+
+		Como guia:<br>
+
+		Use somente-posicional se você não quer que o nome do parâmetro esteja disponível para o usuário. Isso é útil quando nomes de parâmetros não tem um significado real, se você quer forçar a ordem dos argumentos da função quando ela é chamada ou se você precisa ter alguns parâmetros posicionais e alguns nomeados.<br><br>
+
+		Use somente-nomeado quando os nomes tem significado e a definição da função fica mais clara deixando esses nomes explícitos ou se você quer evitar que usuários confiem na posição dos argumentos que estão sendo passados.<br><br>
+
+		Para uma API, use somente-posicional para evitar quebras na mudança da API se os nomes dos parâmetros forem alterados no futuro.<br><br>
+
+		<h3 id="4.8.4">4.8.4. Listas de argumentos arbitrárias<a class="a-indice" href="#00"><sub>&nbsp;índice</sub></a></h3>
+		Finalmente, a opção menos usada é especificar que a função pode ser chamada com um número arbitrário de argumentos. Esses argumentos serão empacotados em uma tupla (ver Tuplas e Sequências). Antes dos argumentos em número variável, zero ou mais argumentos normais podem estar presentes.<br><br>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				def write_multiple_items(file, separator, *args):
+				    file.write(separator.join(args))	
+				</code>
+			</pre>
+		</div>
+
+		Normalmente, esses argumentos variádicos estarão no final da lista de parâmetros formais, porque eles englobam todos os argumentos de entrada restantes, que são passados para a função. Quaisquer parâmetros formais que ocorrem após o parâmetro *args são argumentos ‘somente-nomeados’ , o que significa que eles só podem ser usados como chave-valor, em vez de argumentos posicionais:<br><br>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				>>>
+				>>> def concat(*args, sep="/"):
+				...     return sep.join(args)
+				...
+				>>> concat("earth", "mars", "venus")
+				'earth/mars/venus'
+				>>> concat("earth", "mars", "venus", sep=".")
+				'earth.mars.venus'	
+				</code>
+			</pre>
+		</div>
+
+		<h3 id="4.8.5">4.8.5. Desempacotando listas de argumentos<a class="a-indice" href="#00"><sub>&nbsp;índice</sub></a></h3>
+		A situação inversa ocorre quando os argumentos já estão numa lista ou tupla mas ela precisa ser explodida para invocarmos uma função que requer argumentos posicionais separados. Por exemplo, a função range() espera argumentos separados, start e stop. Se os valores já estiverem juntos em uma lista ou tupla, escreva a chamada de função com o operador * para desempacotá-los da sequência:<br><br>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				>>>
+				>>> list(range(3, 6))            # normal call with separate arguments
+				[3, 4, 5]
+				>>> args = [3, 6]
+				>>> list(range(*args))            # call with arguments unpacked from a list
+				[3, 4, 5]	
+				</code>
+			</pre>
+		</div>
+
+		Da mesma forma, dicionários podem produzir argumentos nomeados com o operador **:<br><br>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				>>>
+				>>> def parrot(voltage, state='a stiff', action='voom'):
+				...     print("-- This parrot wouldn't", action, end=' ')
+				...     print("if you put", voltage, "volts through it.", end=' ')
+				...     print("E's", state, "!")
+				...
+				>>> d = {"voltage": "four million", "state": "bleedin' demised", "action": "VOOM"}
+				>>> parrot(**d)
+				-- This parrot wouldn't VOOM if you put four million volts through it. E's bleedin' demised !	
+				</code>
+			</pre>
+		</div>
+
+		<h3 id="4.8.6">4.8.6. Expressões lambda<a class="a-indice" href="#00"><sub>&nbsp;índice</sub></a></h3>
+		Pequenas funções anônimas podem ser criadas com a palavra-chave lambda. Esta função retorna a soma de seus dois argumentos: lambda a, b: a+b. As funções lambda podem ser usadas sempre que objetos função forem necessários. Eles são sintaticamente restritos a uma única expressão. Semanticamente, eles são apenas açúcar sintático para uma definição de função normal. Como definições de funções aninhadas, as funções lambda podem referenciar variáveis contidas no escopo:<br><br>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				>>>
+				>>> def make_incrementor(n):
+				...     return lambda x: x + n
+				...
+				>>> f = make_incrementor(42)
+				>>> f(0)
+				42
+				>>> f(1)
+				43	
+				</code>
+			</pre>
+		</div>
+
+		O exemplo acima usa uma expressão lambda para retornar uma função. Outro uso é passar uma pequena função como um argumento:<br><br>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				>>>
+				>>> pairs = [(1, 'one'), (2, 'two'), (3, 'three'), (4, 'four')]
+				>>> pairs.sort(key=lambda pair: pair[1])
+				>>> pairs
+				[(4, 'four'), (1, 'one'), (3, 'three'), (2, 'two')]	
+				</code>
+			</pre>
+		</div>
+
+		<h3 id="4.8.7">4.8.7. Strings de documentação<a class="a-indice" href="#00"><sub>&nbsp;índice</sub></a></h3>
+		Aqui estão algumas convenções sobre o conteúdo e formatação de strings de documentação, também conhecidas como docstrings.<br><br>
+
+		A primeira linha deve sempre ser curta, um resumo conciso do propósito do objeto. Por brevidade, não deve explicitamente se referir ao nome ou tipo do objeto, uma vez que estas informações estão disponíveis por outros meios (exceto se o nome da função for o próprio verbo que descreve a finalidade da função). Essa linha deve começar com letra maiúscula e terminar com ponto.<br><br>
+
+		Se existem mais linhas na string de documentação, a segunda linha deve estar em branco, separando visualmente o resumo do resto da descrição. As linhas seguintes devem conter um ou mais parágrafos descrevendo as convenções de chamada ao objeto, seus efeitos colaterais, etc.<br><br>
+
+		O analisador Python não remove a indentação de literais string multilinha. Portanto, ferramentas que processem strings de documentação precisam lidar com isso, quando desejável. Existe uma convenção para isso. A primeira linha não vazia após a linha de sumário determina a indentação para o resto da string de documentação. (Não podemos usar a primeira linha para isso porque ela em geral está adjacente às aspas que iniciam a string, portanto sua indentação real não fica aparente.) Espaços em branco “equivalentes” a essa indentação são então removidos do início das demais linhas da string. Linhas com indentação menor não devem ocorrer, mas se ocorrerem, todos os espaços à sua esquerda são removidos. A equivalência de espaços em branco deve ser testada após a expansão das tabulações (8 espaços, normalmente).<br><br>
+
+		Eis um exemplo de uma string de documentação multilinha:<br><br>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				>>>
+				>>> def my_function():
+				...     """Do nothing, but document it.
+				...
+				...     No, really, it doesn't do anything.
+				...     """
+				...     pass
+				...
+				>>> print(my_function.__doc__)
+
+				Do nothing, but document it.
+
+				    No, really, it doesn't do anything.	
+				</code>
+			</pre>
+		</div>
+
+		<h3 id="4.8.8">4.8.8. Anotações de função<a class="a-indice" href="#00"><sub>&nbsp;índice</sub></a></h3>
+		Anotações de função são informações de metadados completamente opcionais sobre os tipos usados pelas funções definidas pelo usuário (veja PEP 3107 e PEP 484 para mais informações).<br><br>
+
+		Anotações são armazenadas no atributo __annotations__ da função como um dicionário e não tem nenhum efeito em qualquer outra parte da função. Anotações de parâmetro são definidas por dois-pontos (:`)  após o nome do parâmetro, seguida por uma expressão que quando avaliada determina o valor da anotação. Anotações do tipo do retorno são definidas por um literal ``->, seguida por uma expressão, entre a lista de parâmetro e os dois-pontos que marcam o fim da instrução def . O exemplo a seguir possui um argumento obrigatório, um argumento opcional e o valor de retorno anotados:<br><br>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				>>>
+				>>> def f(ham: str, eggs: str = 'eggs') -> str:
+				...     print("Annotations:", f.__annotations__)
+				...     print("Arguments:", ham, eggs)
+				...     return ham + ' and ' + eggs
+				...
+				>>> f('spam')
+				Annotations: {'ham': <class 'str'>, 'return': <class 'str'>, 'eggs': <class 'str'>}
+				Arguments: spam eggs
+				'spam and eggs'	
+				</code>
+			</pre>
+		</div>
+
+		<h3 id="4.9">4.9. Intermezzo: estilo de codificação<a class="a-indice" href="#00"><sub>&nbsp;índice</sub></a></h3>
+		Agora que está prestes a escrever códigos mais longos e complexos em Python, é um bom momento para falar sobre estilo de codificação. A maioria das linguagens podem ser escritas (ou formatadas) em diferentes estilos; alguns são mais legíveis do que outros. Tornar o seu código mais fácil de ler, para os outros, é sempre uma boa ideia, e adotar um estilo de codificação agradável ajuda bastante.<br><br>
+
+		Em Python, a PEP 8 tornou-se o guia de estilo adotado pela maioria dos projetos; promove um estilo de codificação muito legível e visualmente agradável. Todo desenvolvedor Python deve lê-lo em algum momento; eis os pontos mais importantes, selecionados para você:<br><br>
+
+		Use indentação com 4 espaços, e não use tabulações.<br><br>
+
+		4 espaços são um bom meio termo entre indentação estreita (permite maior profundidade de aninhamento) e indentação larga (mais fácil de ler). Tabulações trazem complicações, e o melhor é não usar.<br><br>
+
+		Quebre as linhas de modo que não excedam 79 caracteres.<br><br>
+
+		Isso ajuda os usuários com telas pequenas e torna possível abrir vários arquivos de código lado a lado em telas maiores.<br><br>
+
+		Deixe linhas em branco para separar funções e classes, e blocos de código dentro de funções.<br><br>
+
+		Quando possível, coloque comentários em uma linha própria.<br><br>
+
+		Escreva strings de documentação.<br><br>
+
+		Use espaços ao redor de operadores e após vírgulas, mas não diretamente dentro de parênteses, colchetes e chaves: a = f(1, 2) + g(3, 4).<br><br>
+
+		Nomeie suas classes e funções de forma consistente; a convenção é usar MaiusculoCamelCase para classes e minusculo_com_sublinhado para funções e métodos. Sempre use self como o nome para o primeiro argumento dos métodos (veja Uma primeira olhada nas classes para mais informações sobre classes e métodos).<br><br>
+
+		Não use codificações exóticas se o seu código é feito para ser usado em um contexto internacional. O padrão do Python, UTF-8, ou mesmo ASCII puro funciona bem em qualquer caso.<br><br>
+
+		Da mesma forma, não use caracteres não-ASCII em identificadores se houver apenas a menor chance de pessoas falando um idioma diferente ler ou manter o código.<br><br>
+
+		<blockquote>
+		Notas de rodapé<br>
+		1 Na verdade, passagem por referência para objeto seria uma descrição melhor, pois, se um objeto mutável for passado, quem chamou verá as alterações feitas por quem foi chamado (por exemplo, a inclusão de itens em uma lista).
+		</blockquote>
+
 
 	</main>
 </body>
