@@ -13,7 +13,7 @@
 			text-align: justify;
 			font-size: 18px;
 			font-family: 'Roboto', sans-serif;
-			opacity: 0.8;
+			opacity: 0.9;
 		}
 
 		h1 {
@@ -30,6 +30,35 @@
 		h3 {
 			text-align: left;
 			font-family: 'Courier Prime', monospace;
+		}
+
+	    table {
+	    	width: 100%;
+	    	text-align: center;
+	    	border-collapse: collapse;
+	    }
+
+	    table, td {
+	    	border: 0.5px solid;
+	    	padding: 5px 0 5px;
+	    }
+
+	    th {
+	    	color: white;
+	    }
+
+		tr:nth-child(even) {
+		    background: linear-gradient(#8c8c8c, #232526); 
+		    opacity: 0.8 black; 
+		    color:white; 
+		    text-shadow: 1px 1px black; 
+		}
+
+		tr:nth-child(odd) {
+		    background: linear-gradient(#232526, #8c8c8c); 
+		    opacity: 0.8 black; 
+		    color:white; 
+		    text-shadow: 1px 1px black;	
 		}
 
 		a {
@@ -109,7 +138,8 @@
 		}
 
 		.exemplo {
-		    background:#3b3a3a;
+		    background: black;
+		    color: white;
 		    padding: 1px;
 		    overflow:auto;
 		    margin-bottom: 25px;
@@ -117,6 +147,11 @@
 
 		.exemplo pre {
 		    margin-left: -310px;
+		}
+
+		.p-code {
+			color: white;
+			text-shadow: 0.5px 0.5px black;
 		}
 
 		code.exemplo {
@@ -143,46 +178,59 @@
 
 			</a>
 		<div class="d-indice">
-			<a href="#0">Introdução</a><br><br>
-			<a href="#1">1. Abrindo seu apetite</a><br>
-			<a href="#2">2. Utilizando o interpretador Python</a><br>
-			<a href="#2.1">2.1. Chamando o interpretador</a><br>
-			<a href="#2.1.1">2.1.1. Passagem de argumentos</a><br>
-			<a href="#2.1.2">2.1.2. Modo interativo</a><br>
-			<a href="#2.2">2.2. O interpretador e seu ambiente</a><br>
-			<a href="#2.2.1">2.2.1. Edição de código-fonte</a><br>
-			<a href="#3">3. Uma introdução informal ao Python</a><br>
-			<a href="#3.1">3.1. Usando <span class="py-color">Python</span> como uma calculadora</a><br>
-			<a href="#3.1.1">3.1.1. Números</a><br>
-			<a href="#3.1.2">3.1.2. Strings</a><br>
-			<a href="#3.1.3">3.1.3. Listas</a><br>
-			<a href="#3.2">3.2. Primeiros passos para a programação</a><br>
-			<a href="#4">4. Mais ferramentas de controle de fluxo</a><br>
-			<a href="#4.1">4.1. Comandos if</a><br>
-			<a href="#4.2">4.2. Comandos for</a><br>
-			<a href="#4.3">4.3. A função range()</a><br>
-			<a href="#4.4">4.4. Comandos break e continue, e cláusula else, nos laços de repetição</a><br>
-			<a href="#4.5">4.5. Comandos pass</a><br>
-			<a href="#4.6">4.6. Instruções match</a><br>
-			<a href="#4.7">4.7. Definindo funções</a><br>
-			<a href="#4.8">4.8. Mais sobre definição de funções</a><br>
-			<a href="#4.8.1">4.8.1. Argumentos com valor padrão</a><br>
-			<a href="#4.8.2">4.8.2. Argumentos nomeados</a><br>
-			<a href="#4.8.3">4.8.3. Parâmetros especiais</a><br>
-			<a href="#4.8.3.1">4.8.3.1. Argumentos posicional-ou-nomeados</a><br>
-			<a href="#4.8.3.2">4.8.3.2. Parâmetros somente-posicionais</a><br>
-			<a href="#4.8.3.3">4.8.3.3. Argumentos somente-nomeados</a><br>
-			<a href="#4.8.3.4">4.8.3.4. Exemplos de funções</a><br>
-			<a href="#4.8.3.5">4.8.3.5. Recapitulando</a><br>
-			<a href="#4.8.4">4.8.4. Listas de argumentos arbitrárias</a><br>
-			<a href="#4.8.5">4.8.5. Desempacotando listas de argumentos</a><br>
-			<a href="#4.8.6">4.8.6. Expressões lambda</a><br>
-			<a href="#4.8.7">4.8.7. Strings de documentação</a><br>
-			<a href="#4.8.8">4.8.8. Anotações de função</a><br>
-			<a href="#4.9">4.9. Intermezzo: estilo de codificação</a><br>
+			<a id="i-0" href="#0">Introdução</a><br><br>
+			<a id="i-1" href="#1">1. Abrindo seu apetite</a><br>
+			<a id="i-2" href="#2">2. Utilizando o interpretador Python</a><br>
+			<a id="i-2.1" href="#2.1">2.1. Chamando o interpretador</a><br>
+			<a id="i-2.1.1" href="#2.1.1">2.1.1. Passagem de argumentos</a><br>
+			<a id="i-2.1.2" href="#2.1.2">2.1.2. Modo interativo</a><br>
+			<a id="i-2.2" href="#2.2">2.2. O interpretador e seu ambiente</a><br>
+			<a id="i-2.2.1" href="#2.2.1">2.2.1. Edição de código-fonte</a><br>
+			<a id="i-3" href="#3">3. Uma introdução informal ao Python</a><br>
+			<a id="i-3.1" href="#3.1">3.1. Usando <span class="py-color">Python</span> como uma calculadora</a><br>
+			<a id="i-3.1.1" href="#3.1.1">3.1.1. Números</a><br>
+			<a id="i-3.1.2" href="#3.1.2">3.1.2. Strings</a><br>
+			<a id="i-3.1.3" href="#3.1.3">3.1.3. Listas</a><br>
+			<a id="i-3.2" href="#3.2">3.2. Primeiros passos para a programação</a><br>
+			<a id="i-4" href="#4">4. Mais ferramentas de controle de fluxo</a><br>
+			<a id="i-4.1" href="#4.1">4.1. Comandos if</a><br>
+			<a id="i-4.2" href="#4.2">4.2. Comandos for</a><br>
+			<a id="i-4.3" href="#4.3">4.3. A função range()</a><br>
+			<a id="i-4.4" href="#4.4">4.4. Comandos break e continue, e cláusula else, nos laços de repetição</a><br>
+			<a id="i-4.5" href="#4.5">4.5. Comandos pass</a><br>
+			<a id="i-4.6" href="#4.6">4.6. Instruções match</a><br>
+			<a id="i-4.7" href="#4.7">4.7. Definindo funções</a><br>
+			<a id="i-4.8" href="#4.8">4.8. Mais sobre definição de funções</a><br>
+			<a id="i-4.8.1" href="#4.8.1">4.8.1. Argumentos com valor padrão</a><br>
+			<a id="i-4.8.2" href="#4.8.2">4.8.2. Argumentos nomeados</a><br>
+			<a id="i-4.8.3" href="#4.8.3">4.8.3. Parâmetros especiais</a><br>
+			<a id="i-4.8.3.1" href="#4.8.3.1">4.8.3.1. Argumentos posicional-ou-nomeados</a><br>
+			<a id="i-4.8.3.2" href="#4.8.3.2">4.8.3.2. Parâmetros somente-posicionais</a><br>
+			<a id="i-4.8.3.3" href="#4.8.3.3">4.8.3.3. Argumentos somente-nomeados</a><br>
+			<a id="i-4.8.3.4" href="#4.8.3.4">4.8.3.4. Exemplos de funções</a><br>
+			<a id="i-4.8.3.5" href="#4.8.3.5">4.8.3.5. Recapitulando</a><br>
+			<a id="i-4.8.4" href="#4.8.4">4.8.4. Listas de argumentos arbitrárias</a><br>
+			<a id="i-4.8.5" href="#4.8.5">4.8.5. Desempacotando listas de argumentos</a><br>
+			<a id="i-4.8.6" href="#4.8.6">4.8.6. Expressões lambda</a><br>
+			<a id="i-4.8.7" href="#4.8.7">4.8.7. Strings de documentação</a><br>
+			<a id="i-4.8.8" href="#4.8.8">4.8.8. Anotações de função</a><br>
+			<a id="i-4.9" href="#4.9">4.9. Intermezzo: estilo de codificação</a><br>
+			<a id="i-5" href="#5">5. Estruturas de dados</a><br>
+			<a id="i-5.1" href="#5.1">5.1. Mais sobre listas</a><br>
+			<a id="i-5.1.1" href="#5.1.1">5.1.1. Usando listas como pilhas</a><br>
+			<a id="i-5.1.2" href="#5.1.2">5.1.2. Usando listas como filas</a><br>
+			<a id="i-5.1.3" href="#5.1.3">5.1.3. Compreensões de lista</a><br>
+			<a id="i-5.1.4" href="#5.1.4">5.1.4. Compreensões de lista aninhadas</a><br>
+			<a id="i-5.2" href="#5.2">5.2. A instrução del</a><br>
+			<a id="i-5.3" href="#5.3">5.3. Tuplas e Sequências</a><br>
+			<a id="i-5.4" href="#5.4">5.4. Conjuntos</a><br>
+			<a id="i-5.5" href="#5.5">5.5. Dicionários</a><br>
+			<a id="i-5.6" href="#5.6">5.6. Técnicas de iteração</a><br>
+			<a id="i-5.7" href="#5.7">5.7. Mais sobre condições</a><br>
+			<a id="i-5.8" href="#5.8">5.8. Comparando sequências e outros tipos</a><br>
 		</div>
 
-		<h2 id="0">O tutorial de Python<a class="a-indice" href="#00"><sub>&nbsp;índice</sub></a></h2>
+		<h2 id="0">O tutorial de Python<a class="a-indice" href="#i-0"><sub>&nbsp;índice</sub></a></h2>
 		<span class="py-color">Python</span> é uma linguagem fácil de aprender e poderosa.<br><br>
 
 		Ela tem estruturas de dados de <strong class="c-strong">alto nível</strong> eficientes e uma abordagem simples mas efetiva de programação <strong class="c-strong">orientada a objetos</strong>.<br><br>
@@ -217,7 +265,7 @@
 
 		O Glossário também vale a pena ser estudado.<br><br>
 
-		<h2 id="1">1. Abrindo seu apetite<a class="a-indice" href="#00"><sub>&nbsp;índice</sub></a></h2>
+		<h2 id="1">1. Abrindo seu apetite<a class="a-indice" href="#i-1"><sub>&nbsp;índice</sub></a></h2>
 		Se você trabalha muito com computadores, acabará encontrando alguma tarefa que gostaria de automatizar.<br><br>
 
 		Por exemplo, você pode querer fazer busca-e-troca em um grande número de arquivos de texto, ou renomear e reorganizar um monte de arquivos de fotos de uma maneira complicada.<br><br>
@@ -292,7 +340,7 @@
 		Finalmente, serão explicados alguns conceitos avançados como exceções e classes definidas pelo usuário.<br><br>
 
 		<h2 id="2">2. Utilizando o interpretador Python</h2>
-		<h3 id="2.1">2.1. Chamando o interpretador<a class="a-indice" href="#00"><sub>&nbsp;índice</sub></a></h3>
+		<h3 id="2.1">2.1. Chamando o interpretador<a class="a-indice" href="#i-2.1"><sub>&nbsp;índice</sub></a></h3>
 
 		O interpretador Python é frequentemente instalado como /usr/local/bin/python3.10 nas máquinas onde está disponível; adicionando /usr/local/bin ao caminho de busca da shell de seu Unix torna-se possível iniciá-lo digitando o comando:<br><br>
 
@@ -338,7 +386,7 @@
 
 		Todas as opções de linha de comando são descritas em Linha de comando e ambiente.<br><br>
 
-		<h3 id="2.1.1">2.1.1. Passagem de argumentos<a class="a-indice" href="#00"><sub>&nbsp;índice</sub></a></h3>
+		<h3 id="2.1.1">2.1.1. Passagem de argumentos<a class="a-indice" href="#i-2.1.1"><sub>&nbsp;índice</sub></a></h3>
 
 		Quando são de conhecimento do interpretador, o nome do script e demais argumentos da linha de comando da shell são acessíveis ao próprio script através da variável argv do módulo sys. Pode-se acessar essa lista executando import sys.<br><br>
 
@@ -348,7 +396,7 @@
 
 		Opções especificadas após -c comando ou -m módulo não serão consumidas pelo interpretador mas deixadas em sys.argv para serem tratadas pelo comando ou módulo.<br><br>
 
-		<h3 id="2.1.2">2.1.2. Modo interativo<a class="a-indice" href="#00"><sub>&nbsp;índice</sub></a></h3>
+		<h3 id="2.1.2">2.1.2. Modo interativo<a class="a-indice" href="#i-2.1.2"><sub>&nbsp;índice</sub></a></h3>
 
 		Quando os comandos são lidos a partir do console, diz-se que o interpretador está em modo interativo.<br><br>
 
@@ -384,7 +432,7 @@
 		Para mais informações sobre o modo interativo, veja Modo interativo.
 
 		<h2 id="2.2">2.2. O interpretador e seu ambiente</h2>
-		<h3 id="2.2.1">2.2.1. Edição de código-fonte<a class="a-indice" href="#00"><sub>&nbsp;índice</sub></a></h3>
+		<h3 id="2.2.1">2.2.1. Edição de código-fonte<a class="a-indice" href="#i-2.2.1"><sub>&nbsp;índice</sub></a></h3>
 		Por padrão, arquivos fonte de Python são tratados com codificação UTF-8.<br><br>
 
 		Nessa codificação, caracteres de muitos idiomas no mundo podem ser usados simultaneamente em literais string, identificadores e comentários — embora a biblioteca padrão use apenas caracteres ASCII para identificadores, uma convenção que qualquer código portável deve seguir.<br><br>
@@ -431,7 +479,7 @@
 			1 No Unix, o interpretador Python 3.x não é instalado por padrão com o executável nomeado python, então não vai conflitar com um executável Python 2.x instalado simultaneamente.
 		</blockquote>
 
-		<h2 id="3">3. Uma introdução informal ao Python<a class="a-indice" href="#00"><sub>&nbsp;índice</sub></a></h2>
+		<h2 id="3">3. Uma introdução informal ao Python<a class="a-indice" href="#i-3"><sub>&nbsp;índice</sub></a></h2>
 		Nos exemplos seguintes, pode-se distinguir entrada e saída pela presença ou ausência dos prompts (>>> e …): para repetir o exemplo, você deve digitar tudo após o prompt, quando o mesmo aparece; linhas que não começarem com um prompt são na verdade as saídas geradas pelo interpretador.<br><br>
 
 		Observe que quando aparece uma linha contendo apenas o prompt secundário você deve digitar uma linha em branco; é assim que se encerra um comando de múltiplas linhas.<br><br>
@@ -457,10 +505,10 @@
 			</pre>
 		</div>
 
-		<h3 id="3.1">3.1. Usando Python como uma calculadora<a class="a-indice" href="#00"><sub>&nbsp;índice</sub></a></h3>		
+		<h3 id="3.1">3.1. Usando Python como uma calculadora<a class="a-indice" href="#i-3.1"><sub>&nbsp;índice</sub></a></h3>		
 		Vamos experimentar alguns comandos simples em Python. Inicie o interpretador e aguarde o prompt primário, >>>. (Não deve demorar muito).<br><br>
 
-		<h3 id="3.1.1">3.1.1. Números<a class="a-indice" href="#00"><sub>&nbsp;índice</sub></a></h3>
+		<h3 id="3.1.1">3.1.1. Números<a class="a-indice" href="#i-3.1.1"><sub>&nbsp;índice</sub></a></h3>
 		O interpretador funciona como uma calculadora bem simples: você pode digitar uma expressão e o resultado será apresentado. A sintaxe de expressões é a usual: operadores +, -, * e / funcionam da mesma forma que em outras linguagens tradicionais (por exemplo, Pascal ou C); parênteses (()) podem ser usados para agrupar expressões. Por exemplo:<br><br>
 
 		<div class="exemplo">
@@ -570,7 +618,7 @@
 
 		Além de números, Python também pode manipular strings (sequências de caracteres), que podem ser expressas de diversas formas. Elas podem ser delimitadas por aspas simples ('...') ou duplas ("...") e teremos o mesmo resultado 2. \ pode ser usada para escapar aspas:<br><br>
 
-		<h3 id="3.1.2">3.1.2. Strings<a class="a-indice" href="#00"><sub>&nbsp;índice</sub></a></h3>
+		<h3 id="3.1.2">3.1.2. Strings<a class="a-indice" href="#i-3.1.2"><sub>&nbsp;índice</sub></a></h3>
 
 		<div class="exemplo">
 			<pre>
@@ -893,7 +941,7 @@
 		Formatação de String no Formato printf-style<br>
 		As antigas operações de formatação invocadas quando as strings são o operando esquerdo do operador % são descritas com mais detalhes aqui.<br><br>
 
-		<h3 id="3.1.3">3.1.3. Listas<a class="a-indice" href="#00"><sub>&nbsp;índice</sub></a></h3>
+		<h3 id="3.1.3">3.1.3. Listas<a class="a-indice" href="#i-3.1.3"><sub>&nbsp;índice</sub></a></h3>
 		Python inclui diversas estruturas de dados compostas, usadas para agrupar outros valores. A mais versátil é list (lista), que pode ser escrita como uma lista de valores (itens) separados por vírgula, entre colchetes. Os valores contidos na lista não precisam ser todos do mesmo tipo.<br><br>
 
 		<div class="exemplo">
@@ -1034,7 +1082,7 @@
 			</pre>
 		</div>
 		
-		<h3 id="3.2">3.2. Primeiros passos para a programação<a class="a-indice" href="#00"><sub>&nbsp;índice</sub></a></h3>
+		<h3 id="3.2">3.2. Primeiros passos para a programação<a class="a-indice" href="#i-3.2"><sub>&nbsp;índice</sub></a></h3>
 		Claro, podemos usar o Python para tarefas mais complicadas do que somar 2+2. Por exemplo, podemos escrever o início da sequência de Fibonacci assim:<br><br>
 
 		<div class="exemplo">
@@ -1101,10 +1149,10 @@
 			2 Ao contrário de outras linguagens, caracteres especiais como \n têm o mesmo significado com as aspas simples ('...') e duplas ("...") . A única diferença entre as duas é que, dentro de aspas simples, você não precisa escapar o " (mas você deve escapar a \') e vice-versa.
 		</blockquote>
 
-		<h3 id="4">4. Mais ferramentas de controle de fluxo<a class="a-indice" href="#00"><sub>&nbsp;índice</sub></a></h3>
+		<h3 id="4">4. Mais ferramentas de controle de fluxo<a class="a-indice" href="#i-4"><sub>&nbsp;índice</sub></a></h3>
 		Além do comando while recém apresentado, Python tem as estruturas usuais de controle de fluxo conhecidas em outras linguagens, com algumas particulares.<br><br>
 
-		<h3 id="4.1">4.1. Comandos if<a class="a-indice" href="#00"><sub>&nbsp;índice</sub></a></h3>
+		<h3 id="4.1">4.1. Comandos if<a class="a-indice" href="#i-4.1"><sub>&nbsp;índice</sub></a></h3>
 		Provavelmente o mais conhecido comando de controle de fluxo é o if. Por exemplo:<br><br>
 
 		<div class="exemplo">
@@ -1132,7 +1180,7 @@
 
 		Se você está comparando o mesmo valor com várias constantes, ou verificando por tipos ou atributos específicos, você também pode achar a instrução match útil. Para mais detalhes veja Instruções match.<br><br>
 
-		<h3 id="4.2">4.2. Comandos for<a class="a-indice" href="#00"><sub>&nbsp;índice</sub></a></h3>		
+		<h3 id="4.2">4.2. Comandos for<a class="a-indice" href="#i-4.2"><sub>&nbsp;índice</sub></a></h3>		
 		O comando for em Python é um pouco diferente do que costuma ser em C ou Pascal. Ao invés de sempre iterar sobre uma progressão aritmética de números (como no Pascal), ou permitir ao usuário definir o passo de iteração e a condição de parada (como C), o comando for do Python itera sobre os itens de qualquer sequência (seja uma lista ou uma string), na ordem que aparecem na sequência. Por exemplo:<br><br>
 
 		<div class="exemplo">
@@ -1173,7 +1221,7 @@
 			</pre>
 		</div>
 
-		<h3 id="4.3">4.3. A função range()<a class="a-indice" href="#00"><sub>&nbsp;índice</sub></a></h3>
+		<h3 id="4.3">4.3. A função range()<a class="a-indice" href="#i-4.3"><sub>&nbsp;índice</sub></a></h3>
 		Se você precisa iterar sobre sequências numéricas, a função embutida range() é a resposta. Ela gera progressões aritméticas:<br><br>
 
 		<div class="exemplo">
@@ -1259,7 +1307,7 @@
 
 		Mais tarde, veremos mais funções que retornam iteráveis e tomam iteráveis como argumentos. No capítulo Estruturas de dados, iremos discutir em mais detalhes sobre list().<br><br>
 
-		<h3 id="4.4">4.4. Comandos break e continue, e cláusula else, nos laços de repetição<a class="a-indice" href="#00"><sub>&nbsp;índice</sub></a></h3>
+		<h3 id="4.4">4.4. Comandos break e continue, e cláusula else, nos laços de repetição<a class="a-indice" href="#i-4.4"><sub>&nbsp;índice</sub></a></h3>
 		O comando break, como no C, sai imediatamente do laço de repetição mais interno, seja for ou while.<br><br>
 
 		Laços podem ter uma cláusula else, que é executada sempre que o laço se encerra por exaustão do iterável (no caso do for) ou quando a condição se torna falsa (no caso do while), mas nunca quando o laço é interrompido por um break. Isto é exemplificado no próximo exemplo que procura números primos:<br><br>
@@ -1317,7 +1365,7 @@
 			</pre>
 		</div>
 
-		<h3 id="4.5">4.5. Comandos pass<a class="a-indice" href="#00"><sub>&nbsp;índice</sub></a></h3>
+		<h3 id="4.5">4.5. Comandos pass<a class="a-indice" href="#i-4.5"><sub>&nbsp;índice</sub></a></h3>
 		O comando pass não faz nada. Pode ser usada quando a sintaxe exige um comando mas a semântica do programa não requer nenhuma ação. Por exemplo:<br><br>
 
 		<div class="exemplo">
@@ -1350,7 +1398,7 @@
 			</pre>
 		</div>
 
-		<h3 id="4.6">4.6. Instruções match<a class="a-indice" href="#00"><sub>&nbsp;índice</sub></a></h3>
+		<h3 id="4.6">4.6. Instruções match<a class="a-indice" href="#i-4.6"><sub>&nbsp;índice</sub></a></h3>
 		Uma instrução de correspondência pega uma expressão e compara seu valor com padrões sucessivos fornecidos como um ou mais blocos de case. Isso é superficialmente semelhante a uma instrução switch em C, Java ou JavaScript (e muitas outras linguagens), mas também pode extrair componentes (elementos de sequência ou atributos de objeto) do valor em variáveis.<br><br>
 
 		A forma mais simples compara um valor de assunto com um ou mais literais:<br><br>
@@ -1530,7 +1578,7 @@
 
 		Para uma explicação mais detalhada e exemplos adicionais, você pode olhar PEP 636 que foi escrita em formato de tutorial.<br><br>
 
-		<h3 id="4.7">4.7. Definindo funções<a class="a-indice" href="#00"><sub>&nbsp;índice</sub></a></h3>
+		<h3 id="4.7">4.7. Definindo funções<a class="a-indice" href="#i-4.7"><sub>&nbsp;índice</sub></a></h3>
 		Podemos criar uma função que escreve a série de Fibonacci até um limite arbitrário:<br><br>
 
 		<div class="exemplo">
@@ -1616,10 +1664,10 @@
 
 		A instrução result.append(a) chama um método do objeto lista result. Um método é uma função que ‘pertence’ a um objeto, e é chamada obj.nomemetodo, onde obj é um objeto qualquer (pode ser uma expressão), e nomemetodo é o nome de um método que foi definido pelo tipo do objeto. Tipos diferentes definem métodos diferentes. Métodos de diferentes tipos podem ter o mesmo nome sem ambiguidade. (É possível definir seus próprios tipos de objetos e métodos, utilizando classes, veja em Classes) O método append(), mostrado no exemplo é definido para objetos do tipo lista; adiciona um novo elemento ao final da lista. Neste exemplo, ele equivale a result = result + [a], só que mais eficiente.<br><br>
 
-		<h3 id="4.8">4.8. Mais sobre definição de funções<a class="a-indice" href="#00"><sub>&nbsp;índice</sub></a></h3>
+		<h3 id="4.8">4.8. Mais sobre definição de funções<a class="a-indice" href="#i-4.8"><sub>&nbsp;índice</sub></a></h3>
 		É possível definir funções com um número variável de argumentos. Existem três formas, que podem ser combinadas.<br><br>
 
-		<h3 id="4.8.1">4.8.1. Argumentos com valor padrão<a class="a-indice" href="#00"><sub>&nbsp;índice</sub></a></h3>
+		<h3 id="4.8.1">4.8.1. Argumentos com valor padrão<a class="a-indice" href="#i-4.8.1"><sub>&nbsp;índice</sub></a></h3>
 		A mais útil das três é especificar um valor padrão para um ou mais argumentos. Isso cria uma função que pode ser invocada com menos argumentos do que os que foram definidos. Por exemplo:<br><br>
 
 		<div class="exemplo">
@@ -1702,7 +1750,7 @@
 			</pre>
 		</div>
 
-		<h3 id="4.8.2">4.8.2. Argumentos nomeados<a class="a-indice" href="#00"><sub>&nbsp;índice</sub></a></h3>
+		<h3 id="4.8.2">4.8.2. Argumentos nomeados<a class="a-indice" href="#i-4.8.2"><sub>&nbsp;índice</sub></a></h3>
 		Funções também podem ser chamadas usando argumentos nomeados da forma chave=valor. Por exemplo, a função a seguir:<br><br>
 
 		<div class="exemplo">
@@ -1812,7 +1860,7 @@
 
 		Observe que a ordem em que os argumentos nomeados são exibidos é garantida para corresponder à ordem em que foram fornecidos na chamada da função.<br><br>
 
-		<h3 id="4.8.3">4.8.3. Parâmetros especiais<a class="a-indice" href="#00"><sub>&nbsp;índice</sub></a></h3>
+		<h3 id="4.8.3">4.8.3. Parâmetros especiais<a class="a-indice" href="#i-4.8.3"><sub>&nbsp;índice</sub></a></h3>
 		Por padrão, argumentos podem ser passadas para uma função Python tanto por posição quanto explicitamente pelo nome. Para uma melhor legibilidade e desempenho, faz sentido restringir a maneira pelo qual argumentos possam ser passados, assim um desenvolvedor precisa apenas olhar para a definição da função para determinar se os itens são passados por posição, por posição e nome, ou por nome.<br><br>
 
 		<div class="exemplo">
@@ -1832,18 +1880,18 @@
 
 		onde / e * são opcionais. Se usados, esses símbolos indicam o tipo de parâmetro pelo qual os argumentos podem ser passados para as funções: somente-posicional, posicional-ou-nomeado, e somente-nomeado. Parâmetros nomeados são também conhecidos como parâmetros palavra-chave.<br><br>
 
-		<h3 id="4.8.3.1">4.8.3.1. Argumentos posicional-ou-nomeados<a class="a-indice" href="#00"><sub>&nbsp;índice</sub></a></h3>
+		<h3 id="4.8.3.1">4.8.3.1. Argumentos posicional-ou-nomeados<a class="a-indice" href="#i-4.8.3.1"><sub>&nbsp;índice</sub></a></h3>
 		Se / e * não estão presentes na definição da função, argumentos podem ser passados para uma função por posição ou por nome.<br><br>
 
-		<h3 id="4.8.3.2">4.8.3.2. Parâmetros somente-posicionais<a class="a-indice" href="#00"><sub>&nbsp;índice</sub></a></h3>
+		<h3 id="4.8.3.2">4.8.3.2. Parâmetros somente-posicionais<a class="a-indice" href="#i-4.8.3.2"><sub>&nbsp;índice</sub></a></h3>
 		Olhando com um pouco mais de detalhes, é possível definir certos parâmetros como somente-posicional. Se somente-posicional, a ordem do parâmetro importa, e os parâmetros não podem ser passados por nome. Parâmetros somente-posicional são colocados antes de / (barra). A / é usada para logicamente separar os argumentos somente-posicional dos demais parâmetros. Se não existe uma / na definição da função, não existe parâmetros somente-posicionais.<br><br>
 
 		Parâmetros após a / podem ser posicional-ou-nomeado ou somente-nomeado.<br><br>
 
-		<h3 id="4.8.3.3">4.8.3.3. Argumentos somente-nomeados<a class="a-indice" href="#00"><sub>&nbsp;índice</sub></a></h3>
+		<h3 id="4.8.3.3">4.8.3.3. Argumentos somente-nomeados<a class="a-indice" href="#i-4.8.3.3"><sub>&nbsp;índice</sub></a></h3>
 		Para definir parâmetros como somente-nomeado, indicando que o parâmetro deve ser passado por argumento nomeado, colocamos um * na lista de argumentos imediatamente antes do primeiro parâmetro somente-nomeado.<br><br>
 
-		<h3 id="4.8.3.4">4.8.3.4. Exemplos de funções<a class="a-indice" href="#00"><sub>&nbsp;índice</sub></a></h3>
+		<h3 id="4.8.3.4">4.8.3.4. Exemplos de funções<a class="a-indice" href="#i-4.8.3.4"><sub>&nbsp;índice</sub></a></h3>
 		Considere o seguinte exemplo de definição de função com atenção redobrada para os marcadores / e *:<br><br>
 
 		<div class="exemplo">
@@ -1980,7 +2028,7 @@
 
 		Em outras palavras, o nome de parâmetros somente-posicional podem ser usados em **kwds sem ambiguidade.<br><br>
 
-		<h3 id="4.8.3.5">4.8.3.5. Recapitulando<a class="a-indice" href="#00"><sub>&nbsp;índice</sub></a></h3>
+		<h3 id="4.8.3.5">4.8.3.5. Recapitulando<a class="a-indice" href="#i-4.8.3.5"><sub>&nbsp;índice</sub></a></h3>
 		A situação irá determinar quais parâmetros usar na definição da função:<br><br>
 
 		<div class="exemplo">
@@ -1999,7 +2047,7 @@
 
 		Para uma API, use somente-posicional para evitar quebras na mudança da API se os nomes dos parâmetros forem alterados no futuro.<br><br>
 
-		<h3 id="4.8.4">4.8.4. Listas de argumentos arbitrárias<a class="a-indice" href="#00"><sub>&nbsp;índice</sub></a></h3>
+		<h3 id="4.8.4">4.8.4. Listas de argumentos arbitrárias<a class="a-indice" href="#i-4.8.4"><sub>&nbsp;índice</sub></a></h3>
 		Finalmente, a opção menos usada é especificar que a função pode ser chamada com um número arbitrário de argumentos. Esses argumentos serão empacotados em uma tupla (ver Tuplas e Sequências). Antes dos argumentos em número variável, zero ou mais argumentos normais podem estar presentes.<br><br>
 
 		<div class="exemplo">
@@ -2028,7 +2076,7 @@
 			</pre>
 		</div>
 
-		<h3 id="4.8.5">4.8.5. Desempacotando listas de argumentos<a class="a-indice" href="#00"><sub>&nbsp;índice</sub></a></h3>
+		<h3 id="4.8.5">4.8.5. Desempacotando listas de argumentos<a class="a-indice" href="#i-4.8.5"><sub>&nbsp;índice</sub></a></h3>
 		A situação inversa ocorre quando os argumentos já estão numa lista ou tupla mas ela precisa ser explodida para invocarmos uma função que requer argumentos posicionais separados. Por exemplo, a função range() espera argumentos separados, start e stop. Se os valores já estiverem juntos em uma lista ou tupla, escreva a chamada de função com o operador * para desempacotá-los da sequência:<br><br>
 
 		<div class="exemplo">
@@ -2062,7 +2110,7 @@
 			</pre>
 		</div>
 
-		<h3 id="4.8.6">4.8.6. Expressões lambda<a class="a-indice" href="#00"><sub>&nbsp;índice</sub></a></h3>
+		<h3 id="4.8.6">4.8.6. Expressões lambda<a class="a-indice" href="#i-4.8.6"><sub>&nbsp;índice</sub></a></h3>
 		Pequenas funções anônimas podem ser criadas com a palavra-chave lambda. Esta função retorna a soma de seus dois argumentos: lambda a, b: a+b. As funções lambda podem ser usadas sempre que objetos função forem necessários. Eles são sintaticamente restritos a uma única expressão. Semanticamente, eles são apenas açúcar sintático para uma definição de função normal. Como definições de funções aninhadas, as funções lambda podem referenciar variáveis contidas no escopo:<br><br>
 
 		<div class="exemplo">
@@ -2095,7 +2143,7 @@
 			</pre>
 		</div>
 
-		<h3 id="4.8.7">4.8.7. Strings de documentação<a class="a-indice" href="#00"><sub>&nbsp;índice</sub></a></h3>
+		<h3 id="4.8.7">4.8.7. Strings de documentação<a class="a-indice" href="#i-4.8.7"><sub>&nbsp;índice</sub></a></h3>
 		Aqui estão algumas convenções sobre o conteúdo e formatação de strings de documentação, também conhecidas como docstrings.<br><br>
 
 		A primeira linha deve sempre ser curta, um resumo conciso do propósito do objeto. Por brevidade, não deve explicitamente se referir ao nome ou tipo do objeto, uma vez que estas informações estão disponíveis por outros meios (exceto se o nome da função for o próprio verbo que descreve a finalidade da função). Essa linha deve começar com letra maiúscula e terminar com ponto.<br><br>
@@ -2126,7 +2174,7 @@
 			</pre>
 		</div>
 
-		<h3 id="4.8.8">4.8.8. Anotações de função<a class="a-indice" href="#00"><sub>&nbsp;índice</sub></a></h3>
+		<h3 id="4.8.8">4.8.8. Anotações de função<a class="a-indice" href="#i-4.8.8"><sub>&nbsp;índice</sub></a></h3>
 		Anotações de função são informações de metadados completamente opcionais sobre os tipos usados pelas funções definidas pelo usuário (veja PEP 3107 e PEP 484 para mais informações).<br><br>
 
 		Anotações são armazenadas no atributo __annotations__ da função como um dicionário e não tem nenhum efeito em qualquer outra parte da função. Anotações de parâmetro são definidas por dois-pontos (:`)  após o nome do parâmetro, seguida por uma expressão que quando avaliada determina o valor da anotação. Anotações do tipo do retorno são definidas por um literal ``->, seguida por uma expressão, entre a lista de parâmetro e os dois-pontos que marcam o fim da instrução def . O exemplo a seguir possui um argumento obrigatório, um argumento opcional e o valor de retorno anotados:<br><br>
@@ -2141,14 +2189,14 @@
 				...     return ham + ' and ' + eggs
 				...
 				>>> f('spam')
-				Annotations: {'ham': <class 'str'>, 'return': <class 'str'>, 'eggs': <class 'str'>}
+				Annotations: {'ham': &lt;class 'str'&gt;, 'return': &lt;class 'str'&gt;, 'eggs': &lt;class 'str'&gt;}
 				Arguments: spam eggs
 				'spam and eggs'	
 				</code>
 			</pre>
 		</div>
 
-		<h3 id="4.9">4.9. Intermezzo: estilo de codificação<a class="a-indice" href="#00"><sub>&nbsp;índice</sub></a></h3>
+		<h3 id="4.9">4.9. Intermezzo: estilo de codificação<a class="a-indice" href="#i-4.9"><sub>&nbsp;índice</sub></a></h3>
 		Agora que está prestes a escrever códigos mais longos e complexos em Python, é um bom momento para falar sobre estilo de codificação. A maioria das linguagens podem ser escritas (ou formatadas) em diferentes estilos; alguns são mais legíveis do que outros. Tornar o seu código mais fácil de ler, para os outros, é sempre uma boa ideia, e adotar um estilo de codificação agradável ajuda bastante.<br><br>
 
 		Em Python, a PEP 8 tornou-se o guia de estilo adotado pela maioria dos projetos; promove um estilo de codificação muito legível e visualmente agradável. Todo desenvolvedor Python deve lê-lo em algum momento; eis os pontos mais importantes, selecionados para você:<br><br>
@@ -2179,8 +2227,695 @@
 		Notas de rodapé<br>
 		1 Na verdade, passagem por referência para objeto seria uma descrição melhor, pois, se um objeto mutável for passado, quem chamou verá as alterações feitas por quem foi chamado (por exemplo, a inclusão de itens em uma lista).
 		</blockquote>
+		
+		<h2 id="5">5. Estruturas de dados<a class="a-indice" href="#i-5"><sub>&nbsp;índice</sub></a></h2>
+		<p>Esse capítulo descreve algumas coisas que você já aprendeu em detalhes e adiciona algumas coisas novas também.</p>
 
+		<h3 id="5.1">5.1. Mais sobre listas<a class="a-indice" href="#i-5.1"><sub>&nbsp;índice</sub></a></h3>
+		<p>O tipo de dado lista tem ainda mais métodos. Aqui estão apresentados todos os métodos de objetos do tipo lista:</p>
+
+		<code class="p-code">list.<strong>append</strong>(x)</code>
+		<p>Adiciona um item ao fim da lista. Equivalente a <code class="p-code">a[len(a):] = [x]</code>.</p>
+
+		<code class="p-code">list.<strong>extend</strong>(iterable)</code>
+		<p>Prolonga a lista, adicionando no fim todos os elementos do argumento iterable passado como parâmetro. Equivalente a <code class="p-code">a[len(a):] = iterable</code>.</p>
+
+		<code class="p-code">list.<strong>insert</strong>(i, x)</code>
+		<p>Insere um item em uma dada posição. O primeiro argumento é o índice do elemento antes do qual será feita a inserção, assim <code class="p-code">a.insert(0, x)</code> insere um elemento na frente da lista e <code class="p-code">a.insert(len(a), x)</code> e equivale a <code class="p-code">a.append(x)</code>.</p>
+
+		<code class="p-code">list.<strong>remove</strong>(x)</code>
+		<p>Remove o primeiro item encontrado na lista cujo valor é igual a x. Se não existir valor igual, uma exceção <code class="p-code">ValueError</code> é levantada.</p>
+
+		<code class="p-code">list.<strong>pop</strong>([i])</code>
+		<p>Remove um item em uma dada posição na lista e o retorna. Se nenhum índice é especificado, <code class="p-code">a.pop()</code> remove e devolve o último item da lista. (Os colchetes ao redor do i na demonstração do método indica que o parâmetro é opcional, e não que é necessário escrever estes colchetes ao chamar o método. Você verá este tipo de notação frequentemente na Biblioteca de Referência Python.)</p>
+
+		<code class="p-code">list.<strong>clear</strong>()</code>
+		<p>Remove todos os itens de uma lista. Equivalente a <code class="p-code">del a[:]</code>.</p>
+
+		<code class="p-code">list.<strong>index</strong>(x[, start[, end]])</code>
+		<p>Devolve o índice base-zero do primeiro item cujo valor é igual a x, levantando <code class="p-code">ValueError</code> se este valor não existe.</p>
+
+		<p>Os argumentos opcionais start e end são interpretados como nas notações de fatiamento e são usados para limitar a busca para uma subsequência específica da lista. O índice retornado é calculado relativo ao começo da sequência inteira e não referente ao argumento start.</p>
+
+		<code class="p-code">list.<strong>count</strong>(x)</code>
+		<p>Devolve o número de vezes em que x aparece na lista.</p>
+
+		<code class="p-code">list.<strong>sort</strong>(*, key=None, reverse=False)</code>
+		<p>Ordena os itens na lista (os argumentos podem ser usados para personalizar a ordenação, veja a função <code class="p-code">sorted()</code> para maiores explicações).</p>
+
+		<code class="p-code">list.<strong>reverse</strong>()</code>
+		<p>Inverte a ordem dos elementos na lista.</p>
+
+		<code class="p-code">list.<strong>copy</strong>()</code>
+		<p>Devolve uma cópia rasa da lista. Equivalente a <code class="p-code">a[:]</code>.</p>
+
+		<p>Um exemplo que usa a maior parte dos métodos das listas:</p>
+		<div class="exemplo">
+			<pre>
+				<code>
+				>>> fruits = ['orange', 'apple', 'pear', 'banana', 'kiwi', 'apple', 'banana']
+				>>> fruits.count('apple')
+				2
+				>>> fruits.count('tangerine')
+				0
+				>>> fruits.index('banana')
+				3
+				>>> fruits.index('banana', 4)  # Find next banana starting a position 4
+				6
+				>>> fruits.reverse()
+				>>> fruits
+				['banana', 'apple', 'kiwi', 'banana', 'pear', 'apple', 'orange']
+				>>> fruits.append('grape')
+				>>> fruits
+				['banana', 'apple', 'kiwi', 'banana', 'pear', 'apple', 'orange', 'grape']
+				>>> fruits.sort()
+				>>> fruits
+				['apple', 'apple', 'banana', 'banana', 'grape', 'kiwi', 'orange', 'pear']
+				>>> fruits.pop()
+				'pear'	
+				</code>
+			</pre>
+		</div>
+		<p>Você pode ter percebido que métodos como <code class="p-code">insert, remove</code> ou <code class="p-code">sort</code>, que apenas modificam a lista, não têm valor de retorno impresso – eles retornam o <code class="p-code">None</code> padrão. 1 Isto é um princípio de design para todas as estruturas de dados mutáveis em Python.</p>
+
+		<p>Outra coisa que você deve estar atento é que nem todos os dados podem ser ordenados ou comparados. Por exemplo, , <code class="p-code">[None, 'hello', 10]</code> não podem ser ordenados, pois inteiros não podem ser comparados a strings e None não pode ser comparado a nenhum outro tipo. Além disso, existem alguns tipos de dados que não possuem uma relação de ordem definida. Por exemplo, <code class="p-code">3+4j < 5+7j</code> não é uma comparação válida.</p>
+
+		<h3 id="5.1.1">5.1.1. Usando listas como pilhas<a class="a-indice" href="#i-5.1.1"><sub>&nbsp;índice</sub></a></h3>
+		<p>Os métodos de lista tornam muito fácil utilizar listas como pilhas, onde o item adicionado por último é o primeiro a ser recuperado (política “último a entrar, primeiro a sair”). Para adicionar um item ao topo da pilha, use <code class="p-code">append()</code>. Para recuperar um item do topo da pilha use <code class="p-code">pop()</code> sem nenhum índice. Por exemplo:</p>
+
+		<h3 id="5.1.2">5.1.2. Usando listas como filas<a class="a-indice" href="#i-5.1.2"><sub>&nbsp;índice</sub></a></h3>
+		<p>Você também pode usar uma lista como uma fila, onde o primeiro item adicionado é o primeiro a ser recuperado (política “primeiro a entrar, primeiro a sair”); porém, listas não são eficientes para esta finalidade. Embora appends e pops no final da lista sejam rápidos, fazer inserts ou pops no início da lista é lento (porque todos os demais elementos têm que ser deslocados).</p>
+
+		<p>Para implementar uma fila, use a classe collections.deque que foi projetada para permitir appends e pops eficientes nas duas extremidades. Por exemplo:</p>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				>>> from collections import deque
+				>>> queue = deque(["Eric", "John", "Michael"])
+				>>> queue.append("Terry")           # Terry arrives
+				>>> queue.append("Graham")          # Graham arrives
+				>>> queue.popleft()                 # The first to arrive now leaves
+				'Eric'
+				>>> queue.popleft()                 # The second to arrive now leaves
+				'John'
+				>>> queue                           # Remaining queue in order of arrival
+				deque(['Michael', 'Terry', 'Graham'])
+				</code>
+			</pre>
+		</div>
+
+		<h3 id="5.1.3">5.1.3. Compreensões de lista<a class="a-indice" href="#i-5.1.3"><sub>&nbsp;índice</sub></a></h3>
+		<p>Compreensões de lista fornece uma maneira concisa de criar uma lista. Aplicações comuns são criar novas listas onde cada elemento é o resultado de alguma operação aplicada a cada elemento de outra sequência ou iterável, ou criar uma subsequência de elementos que satisfaçam uma certa condição. (N.d.T. o termo original em inglês é list comprehensions, muito utilizado no Brasil; também se usa a abreviação listcomp).</p>
+
+		<p>Por exemplo, suponha que queremos criar uma lista de quadrados, assim:</p>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				>>> squares = []
+				>>> for x in range(10):
+				...     squares.append(x**2)
+				...
+				>>> squares
+				[0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
+				</code>
+			</pre>
+		</div>
+
+		<p>Note que isto cria (ou sobrescreve) uma variável chamada x que ainda existe após o término do laço. Podemos calcular a lista dos quadrados sem qualquer efeito colateral usando:</p>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				squares = list(map(lambda x: x**2, range(10)))	
+				</code>
+			</pre>
+		</div>
+
+		<p>ou, de maneira equivalente:</p>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				squares = [x**2 for x in range(10)]
+				</code>
+			</pre>
+		</div>
+
+		<p>que é mais conciso e legível.</p>
+
+		<p>Um compreensão de lista consiste de um par de colchetes contendo uma expressão seguida de uma cláusula for, e então zero ou mais cláusulas for ou if. O resultado será uma nova lista resultante da avaliação da expressão no contexto das cláusulas for e if. Por exemplo, essa compreensão combina os elementos de duas listas se eles forem diferentes:</p>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				>>> [(x, y) for x in [1,2,3] for y in [3,1,4] if x != y]
+				[(1, 3), (1, 4), (2, 3), (2, 1), (2, 4), (3, 1), (3, 4)]	
+				</code>
+			</pre>
+		</div>
+
+		<p>e é equivalente a:</p>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				>>> combs = []
+				>>> for x in [1,2,3]:
+				...     for y in [3,1,4]:
+				...         if x != y:
+				...             combs.append((x, y))
+				...
+				>>> combs
+				[(1, 3), (1, 4), (2, 3), (2, 1), (2, 4), (3, 1), (3, 4)]
+				</code>
+			</pre>
+		</div>
+
+		<p>Note como a ordem das instruções <code class="p-code">for</code> e <code class="p-code">if</code> é a mesma em ambos os trechos.</p>
+
+		<p>Se a expressão é uma tupla (ex., <code class="p-code">(x, y)</code> no exemplo anterior), ela deve ser inserida entre parênteses.</p>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				>>> vec = [-4, -2, 0, 2, 4]
+				>>> # create a new list with the values doubled
+				>>> [x*2 for x in vec]
+				[-8, -4, 0, 4, 8]
+				>>> # filter the list to exclude negative numbers
+				>>> [x for x in vec if x >= 0]
+				[0, 2, 4]
+				>>> # apply a function to all the elements
+				>>> [abs(x) for x in vec]
+				[4, 2, 0, 2, 4]
+				>>> # call a method on each element
+				>>> freshfruit = ['  banana', '  loganberry ', 'passion fruit  ']
+				>>> [weapon.strip() for weapon in freshfruit]
+				['banana', 'loganberry', 'passion fruit']
+				>>> # create a list of 2-tuples like (number, square)
+				>>> [(x, x**2) for x in range(6)]
+				[(0, 0), (1, 1), (2, 4), (3, 9), (4, 16), (5, 25)]
+				>>> # the tuple must be parenthesized, otherwise an error is raised
+				>>> [x, x**2 for x in range(6)]
+				  File "<stdin>", line 1, in <module>
+				    [x, x**2 for x in range(6)]
+				               ^
+				SyntaxError: invalid syntax
+				>>> # flatten a list using a listcomp with two 'for'
+				>>> vec = [[1,2,3], [4,5,6], [7,8,9]]
+				>>> [num for elem in vec for num in elem]
+				[1, 2, 3, 4, 5, 6, 7, 8, 9]
+				</code>
+			</pre>
+		</div>
+
+		<p>Compreensões de lista podem conter expressões complexas e funções aninhadas:</p>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				>>> from math import pi
+				>>> [str(round(pi, i)) for i in range(1, 6)]
+				['3.1', '3.14', '3.142', '3.1416', '3.14159']
+				</code>
+			</pre>
+		</div>
+
+		<h3 id="5.1.4">5.1.4. Compreensões de lista aninhadas<a class="a-indice" href="#i-5.1.4"><sub>&nbsp;índice</sub></a></h3>
+		<p>A expressão inicial em uma compreensão de lista pode ser qualquer expressão arbitrária, incluindo outra compreensão de lista.</p>
+
+		<p>Observe este exemplo de uma matriz 3x4 implementada como uma lista de 3 listas de comprimento 4:</p>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				>>> matrix = [
+				...     [1, 2, 3, 4],
+				...     [5, 6, 7, 8],
+				...     [9, 10, 11, 12],
+				... ]
+				</code>
+			</pre>
+		</div>
+
+		<p>A compreensão de lista abaixo transpõe as linhas e colunas:</p>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				>>> [[row[i] for row in matrix] for i in range(4)]
+				[[1, 5, 9], [2, 6, 10], [3, 7, 11], [4, 8, 12]]
+				</code>
+			</pre>
+		</div>
+
+		<p>Como vimos na seção anterior, a compreensão de lista aninhada é computada no contexto da cláusula for seguinte, portanto o exemplo acima equivale a:</p>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				>>> transposed = []
+				>>> for i in range(4):
+				...     transposed.append([row[i] for row in matrix])
+				...
+				>>> transposed
+				[[1, 5, 9], [2, 6, 10], [3, 7, 11], [4, 8, 12]]
+				</code>
+			</pre>
+		</div>
+
+		<p>e isso, por sua vez, faz o mesmo que isto:</p>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				>>> transposed = []
+				>>> for i in range(4):
+				...     # the following 3 lines implement the nested listcomp
+				...     transposed_row = []
+				...     for row in matrix:
+				...         transposed_row.append(row[i])
+				...     transposed.append(transposed_row)
+				...
+				>>> transposed
+				[[1, 5, 9], [2, 6, 10], [3, 7, 11], [4, 8, 12]]
+				</code>
+			</pre>
+		</div>
+
+		<p>Na prática, você deve dar preferência a funções embutidas em vez de expressões complexas. A função zip() resolve muito bem este caso de uso:</p>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				>>> list(zip(*matrix))
+				[(1, 5, 9), (2, 6, 10), (3, 7, 11), (4, 8, 12)]	
+				</code>
+			</pre>
+		</div>
+
+		<p>Veja <a href="https://docs.python.org/pt-br/3/tutorial/controlflow.html#tut-unpacking-arguments">Desempacotando listas de argumentos</a> para entender o uso do asterisco neste exemplo.</p>
+
+		<h3 id="5.2">5.2. A instrução del<a class="a-indice" href="#i-5.2"><sub>&nbsp;índice</sub></a></h3>
+		<p>Existe uma maneira de remover um item de uma lista usando seu índice no lugar do seu valor: a instrução del. Ele difere do método pop() que devolve um valor. A instrução del pode também ser utilizada para remover fatias de uma lista ou limpar a lista inteira (que fizemos antes atribuindo uma lista vazia à fatia a[:]). Por exemplo:</p>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				>>> a = [-1, 1, 66.25, 333, 333, 1234.5]
+				>>> del a[0]
+				>>> a
+				[1, 66.25, 333, 333, 1234.5]
+				>>> del a[2:4]
+				>>> a
+				[1, 66.25, 1234.5]
+				>>> del a[:]
+				>>> a
+				[]	
+				</code>
+			</pre>
+		</div>
+		
+		<p>del também pode ser usado para remover totalmente uma variável:</p>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				>>> del a
+				</code>
+			</pre>
+		</div>
+
+		<p>Referenciar a variável a depois de sua remoção constitui erro (pelo menos até que seja feita uma nova atribuição para ela). Encontraremos outros usos para a instrução del mais tarde.</p>
+
+		<h3 id="5.3">5.3. Tuplas e Sequências<a class="a-indice" href="#i-5.3"><sub>&nbsp;índice</sub></a></h3>
+		<p>Vimos que listas e strings têm muitas propriedades em comum, como indexação e operações de fatiamento. Elas são dois exemplos de sequências (veja Tipos sequências — list, tuple, range). Como Python é uma linguagem em evolução, outros tipos de sequências podem ser adicionados. Existe ainda um outro tipo de sequência padrão na linguagem: a tupla.</p>
+
+		<p>Uma tupla consiste em uma sequência de valores separados por vírgulas, por exemplo:</p>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				>>> t = 12345, 54321, 'hello!'
+				>>> t[0]
+				12345
+				>>> t
+				(12345, 54321, 'hello!')
+				>>> # Tuples may be nested:
+				... u = t, (1, 2, 3, 4, 5)
+				>>> u
+				((12345, 54321, 'hello!'), (1, 2, 3, 4, 5))
+				>>> # Tuples are immutable:
+				... t[0] = 88888
+				Traceback (most recent call last):
+				  File "<stdin>", line 1, in <module>
+				TypeError: 'tuple' object does not support item assignment
+				>>> # but they can contain mutable objects:
+				... v = ([1, 2, 3], [3, 2, 1])
+				>>> v
+				([1, 2, 3], [3, 2, 1])
+				</code>
+			</pre>
+		</div>
+
+		<p>Como você pode ver no trecho acima, na saída do console as tuplas são sempre envolvidas por parênteses, assim tuplas aninhadas podem ser lidas corretamente. Na criação, tuplas podem ser envolvidas ou não por parênteses, desde que o contexto não exija os parênteses (como no caso da tupla dentro de uma expressão maior). Não é possível atribuir itens individuais de uma tupla, contudo é possível criar tuplas que contenham objetos mutáveis, como listas.</p>
+
+		<p>Apesar de tuplas serem similares a listas, elas são frequentemente utilizadas em situações diferentes e com propósitos distintos. Tuplas são imutáveis, e usualmente contém uma sequência heterogênea de elementos que são acessados via desempacotamento (ver a seguir nessa seção) ou índice (ou mesmo por um atributo no caso de namedtuples). Listas são mutáveis, e seus elementos geralmente são homogêneos e são acessados iterando sobre a lista.</p>
+
+		<p>Um problema especial é a criação de tuplas contendo 0 ou 1 itens: a sintaxe usa certos truques para acomodar estes casos. Tuplas vazias são construídas por um par de parênteses vazios; uma tupla unitária é construída por um único valor e uma vírgula entre parênteses (não basta colocar um único valor entre parênteses). Feio, mas funciona. Por exemplo:</p>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				>>> empty = ()
+				>>> singleton = 'hello',    # <-- note trailing comma
+				>>> len(empty)
+				0
+				>>> len(singleton)
+				1
+				>>> singleton
+				('hello',)
+				</code>
+			</pre>
+		</div>
+
+		<p>A instrução <code class="p-code">t = 12345, 54321, 'bom dia!'</code> é um exemplo de empacotamento de tupla: os valores <code class="p-code">12345, 54321 e 'bom dia!'</code> são empacotados em uma tupla. A operação inversa também é possível:</p>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				>>> x, y, z = t
+				</code>
+			</pre>
+		</div>
+
+		<p>Isso é chamado, apropriadamente, de sequência de desempacotamento e funciona para qualquer sequência no lado direito. O desempacotamento de sequência requer que haja tantas variáveis no lado esquerdo do sinal de igual, quanto existem de elementos na sequência. Observe que a atribuição múltipla é, na verdade, apenas uma combinação de empacotamento de tupla e desempacotamento de sequência.</p>
+
+		<h3 id="5.4">5.4. Conjuntos<a class="a-indice" href="#i-5.4"><sub>&nbsp;índice</sub></a></h3>
+		<p>Python também inclui um tipo de dados para conjuntos, chamado set. Um conjunto é uma coleção desordenada de elementos, sem elementos repetidos. Usos comuns para conjuntos incluem a verificação eficiente da existência de objetos e a eliminação de itens duplicados. Conjuntos também suportam operações matemáticas como união, interseção, diferença e diferença simétrica.</p>
+
+		<p>Chaves ou a função set() podem ser usados para criar conjuntos. Note: para criar um conjunto vazio você precisa usar set(), não {}; este último cria um dicionário vazio, uma estrutura de dados que discutiremos na próxima seção.</p>
+
+		<p>Uma pequena demonstração:<p/>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				>>> basket = {'apple', 'orange', 'apple', 'pear', 'orange', 'banana'}
+				>>> print(basket)                      # show that duplicates have been removed
+				{'orange', 'banana', 'pear', 'apple'}
+				>>> 'orange' in basket                 # fast membership testing
+				True
+				>>> 'crabgrass' in basket
+				False
+
+				>>> # Demonstrate set operations on unique letters from two words
+				...
+				>>> a = set('abracadabra')
+				>>> b = set('alacazam')
+				>>> a                                  # unique letters in a
+				{'a', 'r', 'b', 'c', 'd'}
+				>>> a - b                              # letters in a but not in b
+				{'r', 'd', 'b'}
+				>>> a | b                              # letters in a or b or both
+				{'a', 'c', 'r', 'd', 'b', 'm', 'z', 'l'}
+				>>> a & b                              # letters in both a and b
+				{'a', 'c'}
+				>>> a ^ b                              # letters in a or b but not both
+				{'r', 'd', 'b', 'm', 'z', 'l'}
+				</code>
+			</pre>
+		</div>
+
+		<p>Da mesma forma que compreensão de listas, compreensões de conjunto também são suportadas:</p>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				>>> a = {x for x in 'abracadabra' if x not in 'abc'}
+				>>> a
+				{'r', 'd'}
+				</code>
+			</pre>
+		</div>
+
+		<h3 id="5.5">5.5. Dicionários<a class="a-indice" href="#i-5.5"><sub>&nbsp;índice</sub></a>
+</h3>
+		<p>Outra estrutura de dados muito útil embutida em Python é o dicionário, cujo tipo é dict (ver Tipo mapeamento — dict). Dicionários são também chamados de “memória associativa” ou “vetor associativo” em outras linguagens. Diferente de sequências que são indexadas por inteiros, dicionários são indexados por chaves (keys), que podem ser de qualquer tipo imutável (como strings e inteiros). Tuplas também podem ser chaves se contiverem apenas strings, inteiros ou outras tuplas. Se a tupla contiver, direta ou indiretamente, qualquer valor mutável, não poderá ser chave. Listas não podem ser usadas como chaves porque podem ser modificadas internamente pela atribuição em índices ou fatias, e por métodos como append() e extend().</p>
+
+		<p>Um bom modelo mental é imaginar um dicionário como um conjunto não-ordenado de pares chave:valor, onde as chaves são únicas em uma dada instância do dicionário. Dicionários são delimitados por chaves: <code class="p-code">{}</code>, e contém uma lista de pares chave:valor separada por vírgulas. Dessa forma também será exibido o conteúdo de um dicionário no console do Python. O dicionário vazio é <code class="p-code">{}</code>.</p>
+
+		<p>As principais operações em um dicionário são armazenar e recuperar valores a partir de chaves. Também é possível remover um par chave:valor com o comando <code class="p-code">del</code>. Se você armazenar um valor utilizando uma chave já presente, o antigo valor será substituído pelo novo. Se tentar recuperar um valor usando uma chave inexistente, será gerado um erro.
+
+		Executar <code class="p-code">list(d)</code> em um dicionário devolve a lista de todas as chaves presentes no dicionário, na ordem de inserção (se desejar ordená-las basta usar a função <code class="p-code">sorted(d))</code>. Para verificar a existência de uma chave, use o operador in.</p>
+
+		<p>A seguir, um exemplo de uso do dicionário:</p>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				>>> tel = {'jack': 4098, 'sape': 4139}
+				>>> tel['guido'] = 4127
+				>>> tel
+				{'jack': 4098, 'sape': 4139, 'guido': 4127}
+				>>> tel['jack']
+				4098
+				>>> del tel['sape']
+				>>> tel['irv'] = 4127
+				>>> tel
+				{'jack': 4098, 'guido': 4127, 'irv': 4127}
+				>>> list(tel)
+				['jack', 'guido', 'irv']
+				>>> sorted(tel)
+				['guido', 'irv', 'jack']
+				>>> 'guido' in tel
+				True
+				>>> 'jack' not in tel
+				False
+				</code>
+			</pre>
+		</div>
+
+		<p>O construtor dict() produz dicionários diretamente de sequências de pares chave-valor:</p>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				>>> dict([('sape', 4139), ('guido', 4127), ('jack', 4098)])
+				{'sape': 4139, 'guido': 4127, 'jack': 4098}
+				</code>
+			</pre>
+		</div>
+
+		<p>Além disso, as compreensões de dicionários podem ser usadas para criar dicionários a partir de expressões arbitrárias de chave e valor:</p>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				>>> {x: x**2 for x in (2, 4, 6)}
+				{2: 4, 4: 16, 6: 36}
+				</code>
+			</pre>
+		</div>
+
+		<p>Quando chaves são strings simples, é mais fácil especificar os pares usando argumentos nomeados no construtor:</p>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				>>> dict(sape=4139, guido=4127, jack=4098)
+				{'sape': 4139, 'guido': 4127, 'jack': 4098}
+				</code>
+			</pre>
+		</div>
+
+		<h3 id="5.6">5.6. Técnicas de iteração<a class="a-indice" href="#i-5.6"><sub>&nbsp;índice</sub></a></h3>
+		<p>Ao iterar sobre dicionários, a chave e o valor correspondente podem ser obtidos simultaneamente usando o método items().</p>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				>>> knights = {'gallahad': 'the pure', 'robin': 'the brave'}
+				>>> for k, v in knights.items():
+				...     print(k, v)
+				...
+				gallahad the pure
+				robin the brave
+				</code>
+			</pre>
+		</div>
+
+		<p>Ao iterar sobre sequências, a posição e o valor correspondente podem ser obtidos simultaneamente usando a função enumerate().</p>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				>>> for i, v in enumerate(['tic', 'tac', 'toe']):
+				...     print(i, v)
+				...
+				0 tic
+				1 tac
+				2 toe	
+				</code>
+			</pre>
+		</div>
+
+		<p>Para percorrer duas ou mais sequências ao mesmo tempo, as entradas podem ser pareadas com a função zip().</p>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				>>> questions = ['name', 'quest', 'favorite color']
+				>>> answers = ['lancelot', 'the holy grail', 'blue']
+				>>> for q, a in zip(questions, answers):
+				...     print('What is your {0}?  It is {1}.'.format(q, a))
+				...
+				What is your name?  It is lancelot.
+				What is your quest?  It is the holy grail.
+				What is your favorite color?  It is blue.
+				</code>
+			</pre>
+		</div>
+
+		<p>Para percorrer uma sequência em ordem inversa, chame a função reversed() com a sequência na ordem original.</p>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				>>> for i in reversed(range(1, 10, 2)):
+				...     print(i)
+				...
+				9
+				7
+				5
+				3
+				1
+				</code>
+			</pre>
+		</div>
+
+		<p>Para percorrer uma sequência de maneira ordenada, use a função sorted(), que retorna uma lista ordenada com os itens, mantendo a sequência original inalterada.</p>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				>>> basket = ['apple', 'orange', 'apple', 'pear', 'orange', 'banana']
+				>>> for i in sorted(basket):
+				...     print(i)
+				...
+				apple
+				apple
+				banana
+				orange
+				orange
+				pear					
+				</code>
+			</pre>
+		</div>
+
+		<p>Usar set() em uma sequência elimina elementos duplicados. O uso de sorted() em combinação com set() sobre uma sequência é uma maneira idiomática de fazer um loop sobre elementos exclusivos da sequência na ordem de classificação.</p>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				>>> basket = ['apple', 'orange', 'apple', 'pear', 'orange', 'banana']
+				>>> for f in sorted(set(basket)):
+				...     print(f)
+				...
+				apple
+				banana
+				orange
+				pear
+				</code>
+			</pre>
+		</div>
+
+		<p>Às vezes é tentador alterar uma lista enquanto você itera sobre ela; porém, costuma ser mais simples e seguro criar uma nova lista.</p>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				>>> import math
+				>>> raw_data = [56.2, float('NaN'), 51.7, 55.3, 52.5, float('NaN'), 47.8]
+				>>> filtered_data = []
+				>>> for value in raw_data:
+				...     if not math.isnan(value):
+				...         filtered_data.append(value)
+				...
+				>>> filtered_data
+				[56.2, 51.7, 55.3, 52.5, 47.8]
+				</code>
+			</pre>
+		</div>
+
+		<h3 id="5.7">5.7. Mais sobre condições<a class="a-indice" href="#i-5.7"><sub>&nbsp;índice</sub></a></h3>
+		<p>As condições de controle usadas em <code class="p-code">while</code> e <code class="p-code">if</code> podem conter quaisquer operadores, não apenas comparações.
+
+		<p>Os operadores de comparação <code class="p-code">in</code> e <code class="p-code">not in</code> são testes de associação que determinam se um valor está (ou não) em um contêiner. Os operadores são e não comparam se dois objetos são realmente o mesmo objeto. Todos os operadores de comparação têm a mesma prioridade, que é inferior à de todos os operadores numéricos.</p>
+
+		<p>Comparações podem ser encadeadas: Por exemplo <code class="p-code">a < b == c</code> testa se a é menor que b e também se <code class="p-code">b</code> é igual a <code class="p-code">c</code>.</p>
+
+		<p>Comparações podem ser combinadas através de operadores booleanos <code class="p-code">and</code> e <code class="p-code">or</code>, e o resultado de uma comparação (ou de qualquer outra expressão), pode ter seu valor booleano negado através de <code class="p-code">not</code>. Estes possuem menor prioridade que os demais operadores de comparação. Entre eles, not é o de maior prioridade e or o de menor. Dessa forma, a condição A and not <code class="p-code">B</code> or <code class="p-code">C</code> é equivalente a <code class="p-code">(A and (not B))</code> or <code class="p-code">C</code>. Naturalmente, parênteses podem ser usados para expressar o agrupamento desejado.</p>
+
+		<p>Os operadores booleanos <code class="p-code">and</code> e <code class="p-code">or</code> são operadores curto-circuito: seus argumentos são avaliados da esquerda para a direita, e a avaliação encerra quando o resultado é determinado. Por exemplo, se <code class="p-code">A</code> e <code class="p-code">C</code> são expressões verdadeiras, mas B é falsa, então A and B and C não chega a avaliar a expressão <code class="p-code">C</code>. Em geral, quando usado sobre valores genéricos e não como booleanos, o valor do resultado de um operador curto-circuito é o último valor avaliado na expressão.</p>
+
+		<p>É possível atribuir o resultado de uma comparação ou outra expressão booleana para uma variável. Por exemplo:</p>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				>>> string1, string2, string3 = '', 'Trondheim', 'Hammer Dance'
+				>>> non_null = string1 or string2 or string3
+				>>> non_null
+				'Trondheim'
+				</code>
+			</pre>
+		</div>
+
+		<p>Observe que no Python, ao contrário de C, a atribuição dentro de expressões deve ser feita explicitamente com o operador morsa <code class="p-code">:=</code>. Isso evita uma classe comum de problemas encontrados nos programas <code class="p-code">C:</code> digitar <code class="p-code">=</code> em uma expressão quando <code class="p-code">==</code> era o planejado.</p>
+
+		<h3 id="5.8">5.8. Comparando sequências e outros tipos<a class="a-indice" href="#i-5.8"><sub>&nbsp;índice</sub></a></h3>
+		<p>Objetos sequência podem ser comparados com outros objetos sequência, desde que o tipo das sequências seja o mesmo. A comparação utiliza a ordem lexicográfica: primeiramente os dois primeiros itens são comparados, e se diferirem isto determinará o resultado da comparação, caso contrário os próximos dois itens serão comparados, e assim por diante até que se tenha exaurido alguma das sequências. Se em uma comparação de itens, os mesmos forem também sequências (aninhadas), então é disparada recursivamente outra comparação lexicográfica. Se todos os itens da sequência forem iguais, então as sequências são ditas iguais. Se uma das sequências é uma subsequência da outra, então a subsequência é a menor. A comparação lexicográfica de strings utiliza codificação Unicode para definir a ordenação. Alguns exemplos de comparações entre sequências do mesmo tipo:</p>
+
+		<div class="exemplo">
+			<pre>
+				<code>
+				(1, 2, 3)              < (1, 2, 4)
+				[1, 2, 3]              < [1, 2, 4]
+				'ABC' < 'C' < 'Pascal' < 'Python'
+				(1, 2, 3, 4)           < (1, 2, 4)
+				(1, 2)                 < (1, 2, -1)
+				(1, 2, 3)             == (1.0, 2.0, 3.0)
+				(1, 2, ('aa', 'ab'))   < (1, 2, ('abc', 'a'), 4)
+				</code>
+			</pre>
+		</div>
+
+		<p>Note que comparar objetos de tipos diferentes com < ou > é permitido desde que os objetos possuam os métodos de comparação apropriados. Por exemplo, tipos numéricos mistos são comparados de acordo com os seus valores numéricos, portanto 0 é igual a 0.0, etc. Em caso contrário, ao invés de fornecer uma ordenação arbitrária, o interpretador levantará um <code class="p-code">TypeError</code>.</p>
+
+
+		<blockquote>
+		Notas de rodapé <br>
+		1 Outras linguagens podem retornar o objeto modificado, o que permite encadeamento de métodos, como <code class="p-code">d->insert("a")->remove("b")->sort();</code>.</blockquote>
 
 	</main>
 </body>
+
+		<!--
+
+		<div class="exemplo">
+			<pre>
+				<code>
+
+				</code>
+			</pre>
+		</div>
+
+		<a class="a-indice" href="#i-"><sub>&nbsp;índice</sub></a>
+
+		<code class="p-code">
+		-->
+
 </html>
